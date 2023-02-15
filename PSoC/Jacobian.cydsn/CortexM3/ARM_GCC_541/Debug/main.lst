@@ -1,0 +1,1958 @@
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_fmul
+  20              		.global	__aeabi_fadd
+  21              		.global	__aeabi_f2iz
+  22              		.section	.text.Theta1,"ax",%progbits
+  23              		.align	2
+  24              		.global	Theta1
+  25              		.thumb
+  26              		.thumb_func
+  27              		.type	Theta1, %function
+  28              	Theta1:
+  29              	.LFB63:
+  30              		.file 1 "main.c"
+   1:main.c        **** 
+   2:main.c        **** #include "project.h"
+   3:main.c        **** #include "math.h"
+   4:main.c        **** 
+   5:main.c        **** int Theta1(float Angle)
+   6:main.c        ****     {
+  31              		.loc 1 6 0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              	.LVL0:
+  36 0000 08B5     		push	{r3, lr}
+  37              		.cfi_def_cfa_offset 8
+  38              		.cfi_offset 3, -8
+  39              		.cfi_offset 14, -4
+  40              	.LVL1:
+   7:main.c        ****         int Compare;
+   8:main.c        ****         int max_comp=1500;
+   9:main.c        ****         int min_comp=6500;
+  10:main.c        ****         int min_angle=0;
+  11:main.c        ****         int max_angle=180;
+  12:main.c        ****         Compare=((max_comp-min_comp)/(max_angle-min_angle))*(Angle-min_angle)+min_comp;
+  41              		.loc 1 12 0
+  42 0002 0449     		ldr	r1, .L3
+  43 0004 FFF7FEFF 		bl	__aeabi_fmul
+  44              	.LVL2:
+  45 0008 0349     		ldr	r1, .L3+4
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 2
+
+
+  46 000a FFF7FEFF 		bl	__aeabi_fadd
+  47              	.LVL3:
+  48 000e FFF7FEFF 		bl	__aeabi_f2iz
+  49              	.LVL4:
+  13:main.c        ****         return Compare;
+  14:main.c        ****     }
+  50              		.loc 1 14 0
+  51 0012 08BD     		pop	{r3, pc}
+  52              	.L4:
+  53              		.align	2
+  54              	.L3:
+  55 0014 0000D8C1 		.word	-1042808832
+  56 0018 0020CB45 		.word	1170939904
+  57              		.cfi_endproc
+  58              	.LFE63:
+  59              		.size	Theta1, .-Theta1
+  60              		.section	.text.Theta2,"ax",%progbits
+  61              		.align	2
+  62              		.global	Theta2
+  63              		.thumb
+  64              		.thumb_func
+  65              		.type	Theta2, %function
+  66              	Theta2:
+  67              	.LFB64:
+  15:main.c        ****     
+  16:main.c        ****     int Theta2(float Angle)
+  17:main.c        ****     {
+  68              		.loc 1 17 0
+  69              		.cfi_startproc
+  70              		@ args = 0, pretend = 0, frame = 0
+  71              		@ frame_needed = 0, uses_anonymous_args = 0
+  72              	.LVL5:
+  73 0000 08B5     		push	{r3, lr}
+  74              		.cfi_def_cfa_offset 8
+  75              		.cfi_offset 3, -8
+  76              		.cfi_offset 14, -4
+  77              	.LVL6:
+  18:main.c        ****         int Compare;
+  19:main.c        ****         int max_comp=1500;
+  20:main.c        ****         int min_comp=6500;
+  21:main.c        ****         int min_angle=0;
+  22:main.c        ****         int max_angle=180;
+  23:main.c        ****         Compare=((max_comp-min_comp)/(max_angle-min_angle))*(Angle-min_angle)+min_comp;
+  78              		.loc 1 23 0
+  79 0002 0449     		ldr	r1, .L7
+  80 0004 FFF7FEFF 		bl	__aeabi_fmul
+  81              	.LVL7:
+  82 0008 0349     		ldr	r1, .L7+4
+  83 000a FFF7FEFF 		bl	__aeabi_fadd
+  84              	.LVL8:
+  85 000e FFF7FEFF 		bl	__aeabi_f2iz
+  86              	.LVL9:
+  24:main.c        ****         return Compare;
+  25:main.c        ****     }
+  87              		.loc 1 25 0
+  88 0012 08BD     		pop	{r3, pc}
+  89              	.L8:
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 3
+
+
+  90              		.align	2
+  91              	.L7:
+  92 0014 0000D8C1 		.word	-1042808832
+  93 0018 0020CB45 		.word	1170939904
+  94              		.cfi_endproc
+  95              	.LFE64:
+  96              		.size	Theta2, .-Theta2
+  97              		.global	__aeabi_f2d
+  98              		.global	__aeabi_ddiv
+  99              		.global	__aeabi_dmul
+ 100              		.global	__aeabi_d2f
+ 101              		.global	__aeabi_dsub
+ 102              		.global	__aeabi_dadd
+ 103              		.global	__aeabi_fsub
+ 104              		.global	__aeabi_fdiv
+ 105              		.global	__aeabi_fcmple
+ 106              		.global	__aeabi_fcmpge
+ 107              		.section	.text.main,"ax",%progbits
+ 108              		.align	2
+ 109              		.global	main
+ 110              		.thumb
+ 111              		.thumb_func
+ 112              		.type	main, %function
+ 113              	main:
+ 114              	.LFB65:
+  26:main.c        ****     
+  27:main.c        **** int main(void)
+  28:main.c        **** {
+ 115              		.loc 1 28 0
+ 116              		.cfi_startproc
+ 117              		@ args = 0, pretend = 0, frame = 32
+ 118              		@ frame_needed = 0, uses_anonymous_args = 0
+ 119 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 120              		.cfi_def_cfa_offset 36
+ 121              		.cfi_offset 4, -36
+ 122              		.cfi_offset 5, -32
+ 123              		.cfi_offset 6, -28
+ 124              		.cfi_offset 7, -24
+ 125              		.cfi_offset 8, -20
+ 126              		.cfi_offset 9, -16
+ 127              		.cfi_offset 10, -12
+ 128              		.cfi_offset 11, -8
+ 129              		.cfi_offset 14, -4
+ 130 0004 89B0     		sub	sp, sp, #36
+ 131              		.cfi_def_cfa_offset 72
+ 132              	.LVL10:
+  29:main.c        ****     float Angle1;
+  30:main.c        ****     float incrementTheta1;
+  31:main.c        ****     float Theta1dot; //Degrees per second velocity of the first servo
+  32:main.c        ****     
+  33:main.c        ****     float Angle2;
+  34:main.c        ****     float incrementTheta2;
+  35:main.c        ****     float Theta2dot; //Degrees per second velocity of the first servo
+  36:main.c        ****     
+  37:main.c        ****     float Xdot=1.0; //cm/sec
+  38:main.c        ****     float Ydot=1.0; //cm/sec
+  39:main.c        ****     
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 4
+
+
+  40:main.c        ****     float multiplier;
+  41:main.c        ****     float J11inv;
+  42:main.c        ****     float J12inv;
+  43:main.c        ****     float J21inv;
+  44:main.c        ****     float J22inv;
+  45:main.c        ****     float J11;
+  46:main.c        ****     float J12;
+  47:main.c        ****     float J21;
+  48:main.c        ****     float J22;
+  49:main.c        ****     
+  50:main.c        ****     float a2=5.0;
+  51:main.c        ****     float a4=6.5;
+  52:main.c        ****     
+  53:main.c        ****     Servos_Start();
+ 133              		.loc 1 53 0
+ 134 0006 FFF7FEFF 		bl	Servos_Start
+ 135              	.LVL11:
+  54:main.c        ****     
+  55:main.c        ****     Angle1 = 0.0;
+  56:main.c        ****     Angle2 = 90.0;
+  57:main.c        ****     Servos_WriteCompare1(Theta1(Angle1));
+ 136              		.loc 1 57 0
+ 137 000a 0024     		movs	r4, #0
+ 138 000c 2046     		mov	r0, r4
+ 139 000e FFF7FEFF 		bl	Theta1
+ 140              	.LVL12:
+ 141 0012 80B2     		uxth	r0, r0
+ 142 0014 FFF7FEFF 		bl	Servos_WriteCompare1
+ 143              	.LVL13:
+  58:main.c        ****     Servos_WriteCompare2(Theta2(Angle2));
+ 144              		.loc 1 58 0
+ 145 0018 9D4E     		ldr	r6, .L20+8
+ 146 001a 3046     		mov	r0, r6
+ 147 001c FFF7FEFF 		bl	Theta2
+ 148              	.LVL14:
+ 149 0020 80B2     		uxth	r0, r0
+ 150 0022 FFF7FEFF 		bl	Servos_WriteCompare2
+ 151              	.LVL15:
+  59:main.c        ****     CyDelay(3000);
+ 152              		.loc 1 59 0
+ 153 0026 40F6B830 		movw	r0, #3000
+ 154 002a FFF7FEFF 		bl	CyDelay
+ 155              	.LVL16:
+  60:main.c        ****     
+  61:main.c        ****     while (Angle1<=180.0 && Angle1>=0.0 && Angle2<=180.0 && Angle2>=0.0)
+ 156              		.loc 1 61 0
+ 157 002e 11E1     		b	.L10
+ 158              	.LVL17:
+ 159              	.L15:
+  62:main.c        ****     {
+  63:main.c        ****         //Convert to radians
+  64:main.c        ****         Angle1=(Angle1/180.0)*3.14159;
+ 160              		.loc 1 64 0
+ 161 0030 2046     		mov	r0, r4
+ 162 0032 FFF7FEFF 		bl	__aeabi_f2d
+ 163              	.LVL18:
+ 164 0036 0022     		movs	r2, #0
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 5
+
+
+ 165 0038 964B     		ldr	r3, .L20+12
+ 166 003a FFF7FEFF 		bl	__aeabi_ddiv
+ 167              	.LVL19:
+ 168 003e 92A3     		adr	r3, .L20
+ 169 0040 D3E90023 		ldrd	r2, [r3]
+ 170 0044 FFF7FEFF 		bl	__aeabi_dmul
+ 171              	.LVL20:
+ 172 0048 FFF7FEFF 		bl	__aeabi_d2f
+ 173              	.LVL21:
+ 174 004c 8346     		mov	fp, r0
+ 175              	.LVL22:
+  65:main.c        ****         Angle2=(Angle2/180.0)*3.14159;
+ 176              		.loc 1 65 0
+ 177 004e 3046     		mov	r0, r6
+ 178              	.LVL23:
+ 179 0050 FFF7FEFF 		bl	__aeabi_f2d
+ 180              	.LVL24:
+ 181 0054 0022     		movs	r2, #0
+ 182 0056 8F4B     		ldr	r3, .L20+12
+ 183 0058 FFF7FEFF 		bl	__aeabi_ddiv
+ 184              	.LVL25:
+ 185 005c 8AA3     		adr	r3, .L20
+ 186 005e D3E90023 		ldrd	r2, [r3]
+ 187 0062 FFF7FEFF 		bl	__aeabi_dmul
+ 188              	.LVL26:
+ 189 0066 FFF7FEFF 		bl	__aeabi_d2f
+ 190              	.LVL27:
+ 191 006a 8246     		mov	r10, r0
+ 192              	.LVL28:
+  66:main.c        ****         
+  67:main.c        ****         J11=-a4*sin(Angle1)*cos(Angle2)-a4*cos(Angle1)*sin(Angle2)-a2*sin(Angle1);
+ 193              		.loc 1 67 0
+ 194 006c 5846     		mov	r0, fp
+ 195              	.LVL29:
+ 196 006e FFF7FEFF 		bl	__aeabi_f2d
+ 197              	.LVL30:
+ 198 0072 0646     		mov	r6, r0
+ 199 0074 0F46     		mov	r7, r1
+ 200 0076 FFF7FEFF 		bl	sin
+ 201              	.LVL31:
+ 202 007a CDE90001 		strd	r0, [sp]
+ 203 007e 0022     		movs	r2, #0
+ 204 0080 854B     		ldr	r3, .L20+16
+ 205 0082 FFF7FEFF 		bl	__aeabi_dmul
+ 206              	.LVL32:
+ 207 0086 8046     		mov	r8, r0
+ 208 0088 8946     		mov	r9, r1
+ 209 008a 5046     		mov	r0, r10
+ 210 008c FFF7FEFF 		bl	__aeabi_f2d
+ 211              	.LVL33:
+ 212 0090 0446     		mov	r4, r0
+ 213 0092 0D46     		mov	r5, r1
+ 214 0094 FFF7FEFF 		bl	cos
+ 215              	.LVL34:
+ 216 0098 CDE90201 		strd	r0, [sp, #8]
+ 217 009c 0246     		mov	r2, r0
+ 218 009e 0B46     		mov	r3, r1
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 6
+
+
+ 219 00a0 4046     		mov	r0, r8
+ 220 00a2 4946     		mov	r1, r9
+ 221 00a4 FFF7FEFF 		bl	__aeabi_dmul
+ 222              	.LVL35:
+ 223 00a8 8046     		mov	r8, r0
+ 224 00aa 8946     		mov	r9, r1
+ 225 00ac 3046     		mov	r0, r6
+ 226 00ae 3946     		mov	r1, r7
+ 227 00b0 FFF7FEFF 		bl	cos
+ 228              	.LVL36:
+ 229 00b4 CDE90601 		strd	r0, [sp, #24]
+ 230 00b8 0022     		movs	r2, #0
+ 231 00ba 784B     		ldr	r3, .L20+20
+ 232 00bc FFF7FEFF 		bl	__aeabi_dmul
+ 233              	.LVL37:
+ 234 00c0 0646     		mov	r6, r0
+ 235 00c2 0F46     		mov	r7, r1
+ 236 00c4 2046     		mov	r0, r4
+ 237 00c6 2946     		mov	r1, r5
+ 238 00c8 FFF7FEFF 		bl	sin
+ 239              	.LVL38:
+ 240 00cc CDE90401 		strd	r0, [sp, #16]
+ 241 00d0 0246     		mov	r2, r0
+ 242 00d2 0B46     		mov	r3, r1
+ 243 00d4 3046     		mov	r0, r6
+ 244 00d6 3946     		mov	r1, r7
+ 245 00d8 FFF7FEFF 		bl	__aeabi_dmul
+ 246              	.LVL39:
+ 247 00dc 0246     		mov	r2, r0
+ 248 00de 0B46     		mov	r3, r1
+ 249 00e0 4046     		mov	r0, r8
+ 250 00e2 4946     		mov	r1, r9
+ 251 00e4 FFF7FEFF 		bl	__aeabi_dsub
+ 252              	.LVL40:
+ 253 00e8 8046     		mov	r8, r0
+ 254 00ea 8946     		mov	r9, r1
+ 255 00ec 0022     		movs	r2, #0
+ 256 00ee 6C4B     		ldr	r3, .L20+24
+ 257 00f0 DDE90001 		ldrd	r0, [sp]
+ 258 00f4 FFF7FEFF 		bl	__aeabi_dmul
+ 259              	.LVL41:
+ 260 00f8 0246     		mov	r2, r0
+ 261 00fa 0B46     		mov	r3, r1
+ 262 00fc 4046     		mov	r0, r8
+ 263 00fe 4946     		mov	r1, r9
+ 264 0100 FFF7FEFF 		bl	__aeabi_dsub
+ 265              	.LVL42:
+ 266 0104 FFF7FEFF 		bl	__aeabi_d2f
+ 267              	.LVL43:
+ 268 0108 0446     		mov	r4, r0
+ 269              	.LVL44:
+  68:main.c        ****         J21=a4*cos(Angle1)*cos(Angle2)-a4*sin(Angle1)*sin(Angle2)+a2*cos(Angle1);
+ 270              		.loc 1 68 0
+ 271 010a 3246     		mov	r2, r6
+ 272 010c 3B46     		mov	r3, r7
+ 273 010e DDE90201 		ldrd	r0, [sp, #8]
+ 274              	.LVL45:
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 7
+
+
+ 275 0112 FFF7FEFF 		bl	__aeabi_dmul
+ 276              	.LVL46:
+ 277 0116 0646     		mov	r6, r0
+ 278 0118 0F46     		mov	r7, r1
+ 279 011a 0022     		movs	r2, #0
+ 280 011c 5F4B     		ldr	r3, .L20+20
+ 281 011e DDE90001 		ldrd	r0, [sp]
+ 282 0122 FFF7FEFF 		bl	__aeabi_dmul
+ 283              	.LVL47:
+ 284 0126 0246     		mov	r2, r0
+ 285 0128 0B46     		mov	r3, r1
+ 286 012a DDE90401 		ldrd	r0, [sp, #16]
+ 287 012e FFF7FEFF 		bl	__aeabi_dmul
+ 288              	.LVL48:
+ 289 0132 0246     		mov	r2, r0
+ 290 0134 0B46     		mov	r3, r1
+ 291 0136 3046     		mov	r0, r6
+ 292 0138 3946     		mov	r1, r7
+ 293 013a FFF7FEFF 		bl	__aeabi_dsub
+ 294              	.LVL49:
+ 295 013e 0646     		mov	r6, r0
+ 296 0140 0F46     		mov	r7, r1
+ 297 0142 0022     		movs	r2, #0
+ 298 0144 564B     		ldr	r3, .L20+24
+ 299 0146 DDE90601 		ldrd	r0, [sp, #24]
+ 300 014a FFF7FEFF 		bl	__aeabi_dmul
+ 301              	.LVL50:
+ 302 014e 0246     		mov	r2, r0
+ 303 0150 0B46     		mov	r3, r1
+ 304 0152 3046     		mov	r0, r6
+ 305 0154 3946     		mov	r1, r7
+ 306 0156 FFF7FEFF 		bl	__aeabi_dadd
+ 307              	.LVL51:
+ 308 015a FFF7FEFF 		bl	__aeabi_d2f
+ 309              	.LVL52:
+ 310 015e 0546     		mov	r5, r0
+ 311              	.LVL53:
+  69:main.c        ****         J12=-a4*sin(Angle1)*cos(Angle2)-a4*cos(Angle1)*sin(Angle2);
+ 312              		.loc 1 69 0
+ 313 0160 4046     		mov	r0, r8
+ 314              	.LVL54:
+ 315 0162 4946     		mov	r1, r9
+ 316 0164 FFF7FEFF 		bl	__aeabi_d2f
+ 317              	.LVL55:
+ 318 0168 8046     		mov	r8, r0
+ 319              	.LVL56:
+  70:main.c        ****         J22=a4*cos(Angle1)*cos(Angle2)-a4*sin(Angle1)*sin(Angle2);
+ 320              		.loc 1 70 0
+ 321 016a 3046     		mov	r0, r6
+ 322              	.LVL57:
+ 323 016c 3946     		mov	r1, r7
+ 324 016e FFF7FEFF 		bl	__aeabi_d2f
+ 325              	.LVL58:
+ 326 0172 0746     		mov	r7, r0
+ 327              	.LVL59:
+  71:main.c        ****         
+  72:main.c        ****         multiplier=1.0/(J11*J22-J12*J21);
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 8
+
+
+ 328              		.loc 1 72 0
+ 329 0174 0146     		mov	r1, r0
+ 330 0176 2046     		mov	r0, r4
+ 331              	.LVL60:
+ 332 0178 FFF7FEFF 		bl	__aeabi_fmul
+ 333              	.LVL61:
+ 334 017c 0646     		mov	r6, r0
+ 335 017e 4146     		mov	r1, r8
+ 336 0180 2846     		mov	r0, r5
+ 337 0182 FFF7FEFF 		bl	__aeabi_fmul
+ 338              	.LVL62:
+ 339 0186 0146     		mov	r1, r0
+ 340 0188 3046     		mov	r0, r6
+ 341 018a FFF7FEFF 		bl	__aeabi_fsub
+ 342              	.LVL63:
+ 343 018e 0146     		mov	r1, r0
+ 344 0190 4FF07E50 		mov	r0, #1065353216
+ 345 0194 FFF7FEFF 		bl	__aeabi_fdiv
+ 346              	.LVL64:
+ 347 0198 0646     		mov	r6, r0
+ 348              	.LVL65:
+  73:main.c        ****         
+  74:main.c        ****         J11inv= multiplier*J22;
+ 349              		.loc 1 74 0
+ 350 019a 0146     		mov	r1, r0
+ 351 019c 3846     		mov	r0, r7
+ 352              	.LVL66:
+ 353 019e FFF7FEFF 		bl	__aeabi_fmul
+ 354              	.LVL67:
+ 355 01a2 0746     		mov	r7, r0
+ 356              	.LVL68:
+  75:main.c        ****         J21inv=multiplier*(-J21);
+ 357              		.loc 1 75 0
+ 358 01a4 05F10041 		add	r1, r5, #-2147483648
+ 359 01a8 3046     		mov	r0, r6
+ 360              	.LVL69:
+ 361 01aa FFF7FEFF 		bl	__aeabi_fmul
+ 362              	.LVL70:
+ 363 01ae 0546     		mov	r5, r0
+ 364              	.LVL71:
+  76:main.c        ****         J12inv=multiplier*(-J12);
+ 365              		.loc 1 76 0
+ 366 01b0 08F10041 		add	r1, r8, #-2147483648
+ 367 01b4 3046     		mov	r0, r6
+ 368              	.LVL72:
+ 369 01b6 FFF7FEFF 		bl	__aeabi_fmul
+ 370              	.LVL73:
+ 371 01ba 8046     		mov	r8, r0
+ 372              	.LVL74:
+  77:main.c        ****         J22inv=multiplier*J11;
+ 373              		.loc 1 77 0
+ 374 01bc 3146     		mov	r1, r6
+ 375 01be 2046     		mov	r0, r4
+ 376              	.LVL75:
+ 377 01c0 FFF7FEFF 		bl	__aeabi_fmul
+ 378              	.LVL76:
+ 379 01c4 0646     		mov	r6, r0
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 9
+
+
+ 380              	.LVL77:
+  78:main.c        ****         
+  79:main.c        ****         Theta1dot=J11inv*Xdot+J12inv*Ydot;
+ 381              		.loc 1 79 0
+ 382 01c6 4146     		mov	r1, r8
+ 383 01c8 3846     		mov	r0, r7
+ 384              	.LVL78:
+ 385 01ca FFF7FEFF 		bl	__aeabi_fadd
+ 386              	.LVL79:
+  80:main.c        ****         incrementTheta1=Theta1dot/100.0;
+ 387              		.loc 1 80 0
+ 388 01ce 3549     		ldr	r1, .L20+28
+ 389 01d0 FFF7FEFF 		bl	__aeabi_fdiv
+ 390              	.LVL80:
+ 391 01d4 0446     		mov	r4, r0
+ 392              	.LVL81:
+  81:main.c        ****         Theta2dot=J21inv*Xdot+J22inv*Ydot;
+ 393              		.loc 1 81 0
+ 394 01d6 3146     		mov	r1, r6
+ 395 01d8 2846     		mov	r0, r5
+ 396              	.LVL82:
+ 397 01da FFF7FEFF 		bl	__aeabi_fadd
+ 398              	.LVL83:
+  82:main.c        ****         incrementTheta2=Theta2dot/100.0;
+ 399              		.loc 1 82 0
+ 400 01de 3149     		ldr	r1, .L20+28
+ 401 01e0 FFF7FEFF 		bl	__aeabi_fdiv
+ 402              	.LVL84:
+ 403 01e4 0546     		mov	r5, r0
+ 404              	.LVL85:
+  83:main.c        ****         
+  84:main.c        ****         Angle1 = Angle1 + incrementTheta1;
+ 405              		.loc 1 84 0
+ 406 01e6 2146     		mov	r1, r4
+ 407 01e8 5846     		mov	r0, fp
+ 408              	.LVL86:
+ 409 01ea FFF7FEFF 		bl	__aeabi_fadd
+ 410              	.LVL87:
+ 411 01ee 0446     		mov	r4, r0
+ 412              	.LVL88:
+  85:main.c        ****         Angle2 = Angle2 + incrementTheta2;
+ 413              		.loc 1 85 0
+ 414 01f0 2946     		mov	r1, r5
+ 415 01f2 5046     		mov	r0, r10
+ 416              	.LVL89:
+ 417 01f4 FFF7FEFF 		bl	__aeabi_fadd
+ 418              	.LVL90:
+ 419 01f8 0546     		mov	r5, r0
+ 420              	.LVL91:
+  86:main.c        ****         
+  87:main.c        ****         //Convert back to degrees
+  88:main.c        ****         Angle1=(Angle1/3.14159)*180.0;
+ 421              		.loc 1 88 0
+ 422 01fa 2046     		mov	r0, r4
+ 423              	.LVL92:
+ 424 01fc FFF7FEFF 		bl	__aeabi_f2d
+ 425              	.LVL93:
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 10
+
+
+ 426 0200 21A3     		adr	r3, .L20
+ 427 0202 D3E90023 		ldrd	r2, [r3]
+ 428 0206 FFF7FEFF 		bl	__aeabi_ddiv
+ 429              	.LVL94:
+ 430 020a 0022     		movs	r2, #0
+ 431 020c 214B     		ldr	r3, .L20+12
+ 432 020e FFF7FEFF 		bl	__aeabi_dmul
+ 433              	.LVL95:
+ 434 0212 FFF7FEFF 		bl	__aeabi_d2f
+ 435              	.LVL96:
+ 436 0216 0446     		mov	r4, r0
+ 437              	.LVL97:
+  89:main.c        ****         Angle2=(Angle2/3.14159)*180.0;
+ 438              		.loc 1 89 0
+ 439 0218 2846     		mov	r0, r5
+ 440              	.LVL98:
+ 441 021a FFF7FEFF 		bl	__aeabi_f2d
+ 442              	.LVL99:
+ 443 021e 1AA3     		adr	r3, .L20
+ 444 0220 D3E90023 		ldrd	r2, [r3]
+ 445 0224 FFF7FEFF 		bl	__aeabi_ddiv
+ 446              	.LVL100:
+ 447 0228 0022     		movs	r2, #0
+ 448 022a 1A4B     		ldr	r3, .L20+12
+ 449 022c FFF7FEFF 		bl	__aeabi_dmul
+ 450              	.LVL101:
+ 451 0230 FFF7FEFF 		bl	__aeabi_d2f
+ 452              	.LVL102:
+ 453 0234 0646     		mov	r6, r0
+ 454              	.LVL103:
+  90:main.c        ****         
+  91:main.c        ****         Servos_WriteCompare1(Theta1(Angle1));
+ 455              		.loc 1 91 0
+ 456 0236 2046     		mov	r0, r4
+ 457              	.LVL104:
+ 458 0238 FFF7FEFF 		bl	Theta1
+ 459              	.LVL105:
+ 460 023c 80B2     		uxth	r0, r0
+ 461 023e FFF7FEFF 		bl	Servos_WriteCompare1
+ 462              	.LVL106:
+  92:main.c        ****         Servos_WriteCompare1(Theta1(Angle2));
+ 463              		.loc 1 92 0
+ 464 0242 3046     		mov	r0, r6
+ 465 0244 FFF7FEFF 		bl	Theta1
+ 466              	.LVL107:
+ 467 0248 80B2     		uxth	r0, r0
+ 468 024a FFF7FEFF 		bl	Servos_WriteCompare1
+ 469              	.LVL108:
+  93:main.c        ****      
+  94:main.c        ****         CyDelay(10);
+ 470              		.loc 1 94 0
+ 471 024e 0A20     		movs	r0, #10
+ 472 0250 FFF7FEFF 		bl	CyDelay
+ 473              	.LVL109:
+ 474              	.L10:
+  61:main.c        ****     {
+ 475              		.loc 1 61 0
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 11
+
+
+ 476 0254 1449     		ldr	r1, .L20+32
+ 477 0256 2046     		mov	r0, r4
+ 478 0258 FFF7FEFF 		bl	__aeabi_fcmple
+ 479              	.LVL110:
+ 480 025c 80B1     		cbz	r0, .L11
+  61:main.c        ****     {
+ 481              		.loc 1 61 0 is_stmt 0 discriminator 1
+ 482 025e 0021     		movs	r1, #0
+ 483 0260 2046     		mov	r0, r4
+ 484 0262 FFF7FEFF 		bl	__aeabi_fcmpge
+ 485              	.LVL111:
+ 486 0266 58B1     		cbz	r0, .L11
+  61:main.c        ****     {
+ 487              		.loc 1 61 0 discriminator 2
+ 488 0268 0F49     		ldr	r1, .L20+32
+ 489 026a 3046     		mov	r0, r6
+ 490 026c FFF7FEFF 		bl	__aeabi_fcmple
+ 491              	.LVL112:
+ 492 0270 30B1     		cbz	r0, .L11
+  61:main.c        ****     {
+ 493              		.loc 1 61 0 discriminator 3
+ 494 0272 0021     		movs	r1, #0
+ 495 0274 3046     		mov	r0, r6
+ 496 0276 FFF7FEFF 		bl	__aeabi_fcmpge
+ 497              	.LVL113:
+ 498 027a 0028     		cmp	r0, #0
+ 499 027c 7FF4D8AE 		bne	.L15
+ 500              	.L11:
+  95:main.c        ****     }
+  96:main.c        ****     
+  97:main.c        **** }
+ 501              		.loc 1 97 0 is_stmt 1
+ 502 0280 0020     		movs	r0, #0
+ 503 0282 09B0     		add	sp, sp, #36
+ 504              		.cfi_def_cfa_offset 36
+ 505              		@ sp needed
+ 506 0284 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 507              	.LVL114:
+ 508              	.L21:
+ 509              		.align	3
+ 510              	.L20:
+ 511 0288 6E861BF0 		.word	-266631570
+ 512 028c F9210940 		.word	1074340345
+ 513 0290 0000B442 		.word	1119092736
+ 514 0294 00806640 		.word	1080459264
+ 515 0298 00001AC0 		.word	-1072037888
+ 516 029c 00001A40 		.word	1075445760
+ 517 02a0 00001440 		.word	1075052544
+ 518 02a4 0000C842 		.word	1120403456
+ 519 02a8 00003443 		.word	1127481344
+ 520              		.cfi_endproc
+ 521              	.LFE65:
+ 522              		.size	main, .-main
+ 523              		.text
+ 524              	.Letext0:
+ 525              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 526              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 12
+
+
+ 527              		.file 4 "Generated_Source\\PSoC5/Servos.h"
+ 528              		.file 5 "Generated_Source\\PSoC5/CyLib.h"
+ 529              		.file 6 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 530              		.file 7 "Generated_Source\\PSoC5/core_cm3.h"
+ 531              		.section	.debug_info,"",%progbits
+ 532              	.Ldebug_info0:
+ 533 0000 C6030000 		.4byte	0x3c6
+ 534 0004 0400     		.2byte	0x4
+ 535 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 536 000a 04       		.byte	0x4
+ 537 000b 01       		.uleb128 0x1
+ 538 000c 67000000 		.4byte	.LASF42
+ 539 0010 0C       		.byte	0xc
+ 540 0011 DE010000 		.4byte	.LASF43
+ 541 0015 58020000 		.4byte	.LASF44
+ 542 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 543 001d 00000000 		.4byte	0
+ 544 0021 00000000 		.4byte	.Ldebug_line0
+ 545 0025 02       		.uleb128 0x2
+ 546 0026 04       		.byte	0x4
+ 547 0027 04       		.byte	0x4
+ 548 0028 49000000 		.4byte	.LASF0
+ 549 002c 02       		.uleb128 0x2
+ 550 002d 01       		.byte	0x1
+ 551 002e 06       		.byte	0x6
+ 552 002f 3B020000 		.4byte	.LASF1
+ 553 0033 02       		.uleb128 0x2
+ 554 0034 01       		.byte	0x1
+ 555 0035 08       		.byte	0x8
+ 556 0036 59000000 		.4byte	.LASF2
+ 557 003a 02       		.uleb128 0x2
+ 558 003b 02       		.byte	0x2
+ 559 003c 05       		.byte	0x5
+ 560 003d FB010000 		.4byte	.LASF3
+ 561 0041 02       		.uleb128 0x2
+ 562 0042 02       		.byte	0x2
+ 563 0043 07       		.byte	0x7
+ 564 0044 0D010000 		.4byte	.LASF4
+ 565 0048 03       		.uleb128 0x3
+ 566 0049 20000000 		.4byte	.LASF10
+ 567 004d 02       		.byte	0x2
+ 568 004e 3F       		.byte	0x3f
+ 569 004f 53000000 		.4byte	0x53
+ 570 0053 02       		.uleb128 0x2
+ 571 0054 04       		.byte	0x4
+ 572 0055 05       		.byte	0x5
+ 573 0056 2A000000 		.4byte	.LASF5
+ 574 005a 02       		.uleb128 0x2
+ 575 005b 04       		.byte	0x4
+ 576 005c 07       		.byte	0x7
+ 577 005d 6B010000 		.4byte	.LASF6
+ 578 0061 02       		.uleb128 0x2
+ 579 0062 08       		.byte	0x8
+ 580 0063 05       		.byte	0x5
+ 581 0064 D0010000 		.4byte	.LASF7
+ 582 0068 02       		.uleb128 0x2
+ 583 0069 08       		.byte	0x8
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 13
+
+
+ 584 006a 07       		.byte	0x7
+ 585 006b 9E010000 		.4byte	.LASF8
+ 586 006f 04       		.uleb128 0x4
+ 587 0070 04       		.byte	0x4
+ 588 0071 05       		.byte	0x5
+ 589 0072 696E7400 		.ascii	"int\000"
+ 590 0076 02       		.uleb128 0x2
+ 591 0077 04       		.byte	0x4
+ 592 0078 07       		.byte	0x7
+ 593 0079 7D010000 		.4byte	.LASF9
+ 594 007d 03       		.uleb128 0x3
+ 595 007e BF010000 		.4byte	.LASF11
+ 596 0082 03       		.byte	0x3
+ 597 0083 2C       		.byte	0x2c
+ 598 0084 48000000 		.4byte	0x48
+ 599 0088 02       		.uleb128 0x2
+ 600 0089 08       		.byte	0x8
+ 601 008a 04       		.byte	0x4
+ 602 008b 3B000000 		.4byte	.LASF12
+ 603 008f 02       		.uleb128 0x2
+ 604 0090 01       		.byte	0x1
+ 605 0091 08       		.byte	0x8
+ 606 0092 E5010000 		.4byte	.LASF13
+ 607 0096 02       		.uleb128 0x2
+ 608 0097 08       		.byte	0x8
+ 609 0098 04       		.byte	0x4
+ 610 0099 2F020000 		.4byte	.LASF14
+ 611 009d 02       		.uleb128 0x2
+ 612 009e 04       		.byte	0x4
+ 613 009f 07       		.byte	0x7
+ 614 00a0 C7010000 		.4byte	.LASF15
+ 615 00a4 05       		.uleb128 0x5
+ 616 00a5 FF000000 		.4byte	.LASF21
+ 617 00a9 01       		.byte	0x1
+ 618 00aa 05       		.byte	0x5
+ 619 00ab 6F000000 		.4byte	0x6f
+ 620 00af 00000000 		.4byte	.LFB63
+ 621 00b3 1C000000 		.4byte	.LFE63-.LFB63
+ 622 00b7 01       		.uleb128 0x1
+ 623 00b8 9C       		.byte	0x9c
+ 624 00b9 0C010000 		.4byte	0x10c
+ 625 00bd 06       		.uleb128 0x6
+ 626 00be 8A010000 		.4byte	.LASF23
+ 627 00c2 01       		.byte	0x1
+ 628 00c3 05       		.byte	0x5
+ 629 00c4 25000000 		.4byte	0x25
+ 630 00c8 00000000 		.4byte	.LLST0
+ 631 00cc 07       		.uleb128 0x7
+ 632 00cd 33000000 		.4byte	.LASF16
+ 633 00d1 01       		.byte	0x1
+ 634 00d2 07       		.byte	0x7
+ 635 00d3 6F000000 		.4byte	0x6f
+ 636 00d7 01       		.uleb128 0x1
+ 637 00d8 50       		.byte	0x50
+ 638 00d9 08       		.uleb128 0x8
+ 639 00da 4F010000 		.4byte	.LASF17
+ 640 00de 01       		.byte	0x1
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 14
+
+
+ 641 00df 08       		.byte	0x8
+ 642 00e0 6F000000 		.4byte	0x6f
+ 643 00e4 DC05     		.2byte	0x5dc
+ 644 00e6 08       		.uleb128 0x8
+ 645 00e7 47020000 		.4byte	.LASF18
+ 646 00eb 01       		.byte	0x1
+ 647 00ec 09       		.byte	0x9
+ 648 00ed 6F000000 		.4byte	0x6f
+ 649 00f1 6419     		.2byte	0x1964
+ 650 00f3 09       		.uleb128 0x9
+ 651 00f4 F5000000 		.4byte	.LASF19
+ 652 00f8 01       		.byte	0x1
+ 653 00f9 0A       		.byte	0xa
+ 654 00fa 6F000000 		.4byte	0x6f
+ 655 00fe 00       		.byte	0
+ 656 00ff 09       		.uleb128 0x9
+ 657 0100 F1010000 		.4byte	.LASF20
+ 658 0104 01       		.byte	0x1
+ 659 0105 0B       		.byte	0xb
+ 660 0106 6F000000 		.4byte	0x6f
+ 661 010a B4       		.byte	0xb4
+ 662 010b 00       		.byte	0
+ 663 010c 05       		.uleb128 0x5
+ 664 010d 06010000 		.4byte	.LASF22
+ 665 0111 01       		.byte	0x1
+ 666 0112 10       		.byte	0x10
+ 667 0113 6F000000 		.4byte	0x6f
+ 668 0117 00000000 		.4byte	.LFB64
+ 669 011b 1C000000 		.4byte	.LFE64-.LFB64
+ 670 011f 01       		.uleb128 0x1
+ 671 0120 9C       		.byte	0x9c
+ 672 0121 74010000 		.4byte	0x174
+ 673 0125 06       		.uleb128 0x6
+ 674 0126 8A010000 		.4byte	.LASF23
+ 675 012a 01       		.byte	0x1
+ 676 012b 10       		.byte	0x10
+ 677 012c 25000000 		.4byte	0x25
+ 678 0130 23000000 		.4byte	.LLST1
+ 679 0134 07       		.uleb128 0x7
+ 680 0135 33000000 		.4byte	.LASF16
+ 681 0139 01       		.byte	0x1
+ 682 013a 12       		.byte	0x12
+ 683 013b 6F000000 		.4byte	0x6f
+ 684 013f 01       		.uleb128 0x1
+ 685 0140 50       		.byte	0x50
+ 686 0141 08       		.uleb128 0x8
+ 687 0142 4F010000 		.4byte	.LASF17
+ 688 0146 01       		.byte	0x1
+ 689 0147 13       		.byte	0x13
+ 690 0148 6F000000 		.4byte	0x6f
+ 691 014c DC05     		.2byte	0x5dc
+ 692 014e 08       		.uleb128 0x8
+ 693 014f 47020000 		.4byte	.LASF18
+ 694 0153 01       		.byte	0x1
+ 695 0154 14       		.byte	0x14
+ 696 0155 6F000000 		.4byte	0x6f
+ 697 0159 6419     		.2byte	0x1964
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 15
+
+
+ 698 015b 09       		.uleb128 0x9
+ 699 015c F5000000 		.4byte	.LASF19
+ 700 0160 01       		.byte	0x1
+ 701 0161 15       		.byte	0x15
+ 702 0162 6F000000 		.4byte	0x6f
+ 703 0166 00       		.byte	0
+ 704 0167 09       		.uleb128 0x9
+ 705 0168 F1010000 		.4byte	.LASF20
+ 706 016c 01       		.byte	0x1
+ 707 016d 16       		.byte	0x16
+ 708 016e 6F000000 		.4byte	0x6f
+ 709 0172 B4       		.byte	0xb4
+ 710 0173 00       		.byte	0
+ 711 0174 05       		.uleb128 0x5
+ 712 0175 66010000 		.4byte	.LASF24
+ 713 0179 01       		.byte	0x1
+ 714 017a 1B       		.byte	0x1b
+ 715 017b 6F000000 		.4byte	0x6f
+ 716 017f 00000000 		.4byte	.LFB65
+ 717 0183 AC020000 		.4byte	.LFE65-.LFB65
+ 718 0187 01       		.uleb128 0x1
+ 719 0188 9C       		.byte	0x9c
+ 720 0189 76030000 		.4byte	0x376
+ 721 018d 0A       		.uleb128 0xa
+ 722 018e 90010000 		.4byte	.LASF25
+ 723 0192 01       		.byte	0x1
+ 724 0193 1D       		.byte	0x1d
+ 725 0194 25000000 		.4byte	0x25
+ 726 0198 46000000 		.4byte	.LLST2
+ 727 019c 0A       		.uleb128 0xa
+ 728 019d 00000000 		.4byte	.LASF26
+ 729 01a1 01       		.byte	0x1
+ 730 01a2 1E       		.byte	0x1e
+ 731 01a3 25000000 		.4byte	0x25
+ 732 01a7 AB000000 		.4byte	.LLST3
+ 733 01ab 0A       		.uleb128 0xa
+ 734 01ac 20010000 		.4byte	.LASF27
+ 735 01b0 01       		.byte	0x1
+ 736 01b1 1F       		.byte	0x1f
+ 737 01b2 25000000 		.4byte	0x25
+ 738 01b6 C9000000 		.4byte	.LLST4
+ 739 01ba 0A       		.uleb128 0xa
+ 740 01bb 97010000 		.4byte	.LASF28
+ 741 01bf 01       		.byte	0x1
+ 742 01c0 21       		.byte	0x21
+ 743 01c1 25000000 		.4byte	0x25
+ 744 01c5 DC000000 		.4byte	.LLST5
+ 745 01c9 0A       		.uleb128 0xa
+ 746 01ca 10000000 		.4byte	.LASF29
+ 747 01ce 01       		.byte	0x1
+ 748 01cf 22       		.byte	0x22
+ 749 01d0 25000000 		.4byte	0x25
+ 750 01d4 41010000 		.4byte	.LLST6
+ 751 01d8 0A       		.uleb128 0xa
+ 752 01d9 B5010000 		.4byte	.LASF30
+ 753 01dd 01       		.byte	0x1
+ 754 01de 23       		.byte	0x23
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 16
+
+
+ 755 01df 25000000 		.4byte	0x25
+ 756 01e3 5F010000 		.4byte	.LLST7
+ 757 01e7 0B       		.uleb128 0xb
+ 758 01e8 4F000000 		.4byte	.LASF31
+ 759 01ec 01       		.byte	0x1
+ 760 01ed 25       		.byte	0x25
+ 761 01ee 25000000 		.4byte	0x25
+ 762 01f2 04       		.byte	0x4
+ 763 01f3 0000803F 		.4byte	0x3f800000
+ 764 01f7 0B       		.uleb128 0xb
+ 765 01f8 54000000 		.4byte	.LASF32
+ 766 01fc 01       		.byte	0x1
+ 767 01fd 26       		.byte	0x26
+ 768 01fe 25000000 		.4byte	0x25
+ 769 0202 04       		.byte	0x4
+ 770 0203 0000803F 		.4byte	0x3f800000
+ 771 0207 0A       		.uleb128 0xa
+ 772 0208 37010000 		.4byte	.LASF33
+ 773 020c 01       		.byte	0x1
+ 774 020d 28       		.byte	0x28
+ 775 020e 25000000 		.4byte	0x25
+ 776 0212 72010000 		.4byte	.LLST8
+ 777 0216 0A       		.uleb128 0xa
+ 778 0217 42000000 		.4byte	.LASF34
+ 779 021b 01       		.byte	0x1
+ 780 021c 29       		.byte	0x29
+ 781 021d 25000000 		.4byte	0x25
+ 782 0221 9B010000 		.4byte	.LLST9
+ 783 0225 0A       		.uleb128 0xa
+ 784 0226 58010000 		.4byte	.LASF35
+ 785 022a 01       		.byte	0x1
+ 786 022b 2A       		.byte	0x2a
+ 787 022c 25000000 		.4byte	0x25
+ 788 0230 B9010000 		.4byte	.LLST10
+ 789 0234 0A       		.uleb128 0xa
+ 790 0235 5F010000 		.4byte	.LASF36
+ 791 0239 01       		.byte	0x1
+ 792 023a 2B       		.byte	0x2b
+ 793 023b 25000000 		.4byte	0x25
+ 794 023f D7010000 		.4byte	.LLST11
+ 795 0243 0A       		.uleb128 0xa
+ 796 0244 EA010000 		.4byte	.LASF37
+ 797 0248 01       		.byte	0x1
+ 798 0249 2C       		.byte	0x2c
+ 799 024a 25000000 		.4byte	0x25
+ 800 024e F5010000 		.4byte	.LLST12
+ 801 0252 0C       		.uleb128 0xc
+ 802 0253 4A313100 		.ascii	"J11\000"
+ 803 0257 01       		.byte	0x1
+ 804 0258 2D       		.byte	0x2d
+ 805 0259 25000000 		.4byte	0x25
+ 806 025d 13020000 		.4byte	.LLST13
+ 807 0261 0C       		.uleb128 0xc
+ 808 0262 4A313200 		.ascii	"J12\000"
+ 809 0266 01       		.byte	0x1
+ 810 0267 2E       		.byte	0x2e
+ 811 0268 25000000 		.4byte	0x25
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 17
+
+
+ 812 026c 31020000 		.4byte	.LLST14
+ 813 0270 0C       		.uleb128 0xc
+ 814 0271 4A323100 		.ascii	"J21\000"
+ 815 0275 01       		.byte	0x1
+ 816 0276 2F       		.byte	0x2f
+ 817 0277 25000000 		.4byte	0x25
+ 818 027b 4F020000 		.4byte	.LLST15
+ 819 027f 0C       		.uleb128 0xc
+ 820 0280 4A323200 		.ascii	"J22\000"
+ 821 0284 01       		.byte	0x1
+ 822 0285 30       		.byte	0x30
+ 823 0286 25000000 		.4byte	0x25
+ 824 028a 6D020000 		.4byte	.LLST16
+ 825 028e 0D       		.uleb128 0xd
+ 826 028f 613200   		.ascii	"a2\000"
+ 827 0292 01       		.byte	0x1
+ 828 0293 32       		.byte	0x32
+ 829 0294 25000000 		.4byte	0x25
+ 830 0298 04       		.byte	0x4
+ 831 0299 0000A040 		.4byte	0x40a00000
+ 832 029d 0D       		.uleb128 0xd
+ 833 029e 613400   		.ascii	"a4\000"
+ 834 02a1 01       		.byte	0x1
+ 835 02a2 33       		.byte	0x33
+ 836 02a3 25000000 		.4byte	0x25
+ 837 02a7 04       		.byte	0x4
+ 838 02a8 0000D040 		.4byte	0x40d00000
+ 839 02ac 0E       		.uleb128 0xe
+ 840 02ad 0A000000 		.4byte	.LVL11
+ 841 02b1 87030000 		.4byte	0x387
+ 842 02b5 0F       		.uleb128 0xf
+ 843 02b6 12000000 		.4byte	.LVL12
+ 844 02ba A4000000 		.4byte	0xa4
+ 845 02be CA020000 		.4byte	0x2ca
+ 846 02c2 10       		.uleb128 0x10
+ 847 02c3 01       		.uleb128 0x1
+ 848 02c4 50       		.byte	0x50
+ 849 02c5 03       		.uleb128 0x3
+ 850 02c6 F5       		.byte	0xf5
+ 851 02c7 04       		.uleb128 0x4
+ 852 02c8 25       		.uleb128 0x25
+ 853 02c9 00       		.byte	0
+ 854 02ca 0E       		.uleb128 0xe
+ 855 02cb 18000000 		.4byte	.LVL13
+ 856 02cf 92030000 		.4byte	0x392
+ 857 02d3 0F       		.uleb128 0xf
+ 858 02d4 20000000 		.4byte	.LVL14
+ 859 02d8 0C010000 		.4byte	0x10c
+ 860 02dc E8020000 		.4byte	0x2e8
+ 861 02e0 10       		.uleb128 0x10
+ 862 02e1 01       		.uleb128 0x1
+ 863 02e2 50       		.byte	0x50
+ 864 02e3 03       		.uleb128 0x3
+ 865 02e4 F5       		.byte	0xf5
+ 866 02e5 06       		.uleb128 0x6
+ 867 02e6 25       		.uleb128 0x25
+ 868 02e7 00       		.byte	0
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 18
+
+
+ 869 02e8 0E       		.uleb128 0xe
+ 870 02e9 26000000 		.4byte	.LVL15
+ 871 02ed 9D030000 		.4byte	0x39d
+ 872 02f1 0F       		.uleb128 0xf
+ 873 02f2 2E000000 		.4byte	.LVL16
+ 874 02f6 A8030000 		.4byte	0x3a8
+ 875 02fa 06030000 		.4byte	0x306
+ 876 02fe 10       		.uleb128 0x10
+ 877 02ff 01       		.uleb128 0x1
+ 878 0300 50       		.byte	0x50
+ 879 0301 03       		.uleb128 0x3
+ 880 0302 0A       		.byte	0xa
+ 881 0303 B80B     		.2byte	0xbb8
+ 882 0305 00       		.byte	0
+ 883 0306 0E       		.uleb128 0xe
+ 884 0307 7A000000 		.4byte	.LVL31
+ 885 030b B3030000 		.4byte	0x3b3
+ 886 030f 0E       		.uleb128 0xe
+ 887 0310 98000000 		.4byte	.LVL34
+ 888 0314 BE030000 		.4byte	0x3be
+ 889 0318 0E       		.uleb128 0xe
+ 890 0319 B4000000 		.4byte	.LVL36
+ 891 031d BE030000 		.4byte	0x3be
+ 892 0321 0E       		.uleb128 0xe
+ 893 0322 CC000000 		.4byte	.LVL38
+ 894 0326 B3030000 		.4byte	0x3b3
+ 895 032a 0F       		.uleb128 0xf
+ 896 032b 3C020000 		.4byte	.LVL105
+ 897 032f A4000000 		.4byte	0xa4
+ 898 0333 3F030000 		.4byte	0x33f
+ 899 0337 10       		.uleb128 0x10
+ 900 0338 01       		.uleb128 0x1
+ 901 0339 50       		.byte	0x50
+ 902 033a 03       		.uleb128 0x3
+ 903 033b F5       		.byte	0xf5
+ 904 033c 04       		.uleb128 0x4
+ 905 033d 25       		.uleb128 0x25
+ 906 033e 00       		.byte	0
+ 907 033f 0E       		.uleb128 0xe
+ 908 0340 42020000 		.4byte	.LVL106
+ 909 0344 92030000 		.4byte	0x392
+ 910 0348 0F       		.uleb128 0xf
+ 911 0349 48020000 		.4byte	.LVL107
+ 912 034d A4000000 		.4byte	0xa4
+ 913 0351 5D030000 		.4byte	0x35d
+ 914 0355 10       		.uleb128 0x10
+ 915 0356 01       		.uleb128 0x1
+ 916 0357 50       		.byte	0x50
+ 917 0358 03       		.uleb128 0x3
+ 918 0359 F5       		.byte	0xf5
+ 919 035a 06       		.uleb128 0x6
+ 920 035b 25       		.uleb128 0x25
+ 921 035c 00       		.byte	0
+ 922 035d 0E       		.uleb128 0xe
+ 923 035e 4E020000 		.4byte	.LVL108
+ 924 0362 92030000 		.4byte	0x392
+ 925 0366 11       		.uleb128 0x11
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 19
+
+
+ 926 0367 54020000 		.4byte	.LVL109
+ 927 036b A8030000 		.4byte	0x3a8
+ 928 036f 10       		.uleb128 0x10
+ 929 0370 01       		.uleb128 0x1
+ 930 0371 50       		.byte	0x50
+ 931 0372 01       		.uleb128 0x1
+ 932 0373 3A       		.byte	0x3a
+ 933 0374 00       		.byte	0
+ 934 0375 00       		.byte	0
+ 935 0376 12       		.uleb128 0x12
+ 936 0377 2A010000 		.4byte	.LASF45
+ 937 037b 07       		.byte	0x7
+ 938 037c 1207     		.2byte	0x712
+ 939 037e 82030000 		.4byte	0x382
+ 940 0382 13       		.uleb128 0x13
+ 941 0383 7D000000 		.4byte	0x7d
+ 942 0387 14       		.uleb128 0x14
+ 943 0388 42010000 		.4byte	.LASF38
+ 944 038c 42010000 		.4byte	.LASF38
+ 945 0390 04       		.byte	0x4
+ 946 0391 92       		.byte	0x92
+ 947 0392 14       		.uleb128 0x14
+ 948 0393 05020000 		.4byte	.LASF39
+ 949 0397 05020000 		.4byte	.LASF39
+ 950 039b 04       		.byte	0x4
+ 951 039c C7       		.byte	0xc7
+ 952 039d 14       		.uleb128 0x14
+ 953 039e 1A020000 		.4byte	.LASF40
+ 954 03a2 1A020000 		.4byte	.LASF40
+ 955 03a6 04       		.byte	0x4
+ 956 03a7 CA       		.byte	0xca
+ 957 03a8 14       		.uleb128 0x14
+ 958 03a9 50020000 		.4byte	.LASF41
+ 959 03ad 50020000 		.4byte	.LASF41
+ 960 03b1 05       		.byte	0x5
+ 961 03b2 76       		.byte	0x76
+ 962 03b3 15       		.uleb128 0x15
+ 963 03b4 73696E00 		.ascii	"sin\000"
+ 964 03b8 73696E00 		.ascii	"sin\000"
+ 965 03bc 06       		.byte	0x6
+ 966 03bd 6F       		.byte	0x6f
+ 967 03be 15       		.uleb128 0x15
+ 968 03bf 636F7300 		.ascii	"cos\000"
+ 969 03c3 636F7300 		.ascii	"cos\000"
+ 970 03c7 06       		.byte	0x6
+ 971 03c8 6E       		.byte	0x6e
+ 972 03c9 00       		.byte	0
+ 973              		.section	.debug_abbrev,"",%progbits
+ 974              	.Ldebug_abbrev0:
+ 975 0000 01       		.uleb128 0x1
+ 976 0001 11       		.uleb128 0x11
+ 977 0002 01       		.byte	0x1
+ 978 0003 25       		.uleb128 0x25
+ 979 0004 0E       		.uleb128 0xe
+ 980 0005 13       		.uleb128 0x13
+ 981 0006 0B       		.uleb128 0xb
+ 982 0007 03       		.uleb128 0x3
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 20
+
+
+ 983 0008 0E       		.uleb128 0xe
+ 984 0009 1B       		.uleb128 0x1b
+ 985 000a 0E       		.uleb128 0xe
+ 986 000b 55       		.uleb128 0x55
+ 987 000c 17       		.uleb128 0x17
+ 988 000d 11       		.uleb128 0x11
+ 989 000e 01       		.uleb128 0x1
+ 990 000f 10       		.uleb128 0x10
+ 991 0010 17       		.uleb128 0x17
+ 992 0011 00       		.byte	0
+ 993 0012 00       		.byte	0
+ 994 0013 02       		.uleb128 0x2
+ 995 0014 24       		.uleb128 0x24
+ 996 0015 00       		.byte	0
+ 997 0016 0B       		.uleb128 0xb
+ 998 0017 0B       		.uleb128 0xb
+ 999 0018 3E       		.uleb128 0x3e
+ 1000 0019 0B       		.uleb128 0xb
+ 1001 001a 03       		.uleb128 0x3
+ 1002 001b 0E       		.uleb128 0xe
+ 1003 001c 00       		.byte	0
+ 1004 001d 00       		.byte	0
+ 1005 001e 03       		.uleb128 0x3
+ 1006 001f 16       		.uleb128 0x16
+ 1007 0020 00       		.byte	0
+ 1008 0021 03       		.uleb128 0x3
+ 1009 0022 0E       		.uleb128 0xe
+ 1010 0023 3A       		.uleb128 0x3a
+ 1011 0024 0B       		.uleb128 0xb
+ 1012 0025 3B       		.uleb128 0x3b
+ 1013 0026 0B       		.uleb128 0xb
+ 1014 0027 49       		.uleb128 0x49
+ 1015 0028 13       		.uleb128 0x13
+ 1016 0029 00       		.byte	0
+ 1017 002a 00       		.byte	0
+ 1018 002b 04       		.uleb128 0x4
+ 1019 002c 24       		.uleb128 0x24
+ 1020 002d 00       		.byte	0
+ 1021 002e 0B       		.uleb128 0xb
+ 1022 002f 0B       		.uleb128 0xb
+ 1023 0030 3E       		.uleb128 0x3e
+ 1024 0031 0B       		.uleb128 0xb
+ 1025 0032 03       		.uleb128 0x3
+ 1026 0033 08       		.uleb128 0x8
+ 1027 0034 00       		.byte	0
+ 1028 0035 00       		.byte	0
+ 1029 0036 05       		.uleb128 0x5
+ 1030 0037 2E       		.uleb128 0x2e
+ 1031 0038 01       		.byte	0x1
+ 1032 0039 3F       		.uleb128 0x3f
+ 1033 003a 19       		.uleb128 0x19
+ 1034 003b 03       		.uleb128 0x3
+ 1035 003c 0E       		.uleb128 0xe
+ 1036 003d 3A       		.uleb128 0x3a
+ 1037 003e 0B       		.uleb128 0xb
+ 1038 003f 3B       		.uleb128 0x3b
+ 1039 0040 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 21
+
+
+ 1040 0041 27       		.uleb128 0x27
+ 1041 0042 19       		.uleb128 0x19
+ 1042 0043 49       		.uleb128 0x49
+ 1043 0044 13       		.uleb128 0x13
+ 1044 0045 11       		.uleb128 0x11
+ 1045 0046 01       		.uleb128 0x1
+ 1046 0047 12       		.uleb128 0x12
+ 1047 0048 06       		.uleb128 0x6
+ 1048 0049 40       		.uleb128 0x40
+ 1049 004a 18       		.uleb128 0x18
+ 1050 004b 9642     		.uleb128 0x2116
+ 1051 004d 19       		.uleb128 0x19
+ 1052 004e 01       		.uleb128 0x1
+ 1053 004f 13       		.uleb128 0x13
+ 1054 0050 00       		.byte	0
+ 1055 0051 00       		.byte	0
+ 1056 0052 06       		.uleb128 0x6
+ 1057 0053 05       		.uleb128 0x5
+ 1058 0054 00       		.byte	0
+ 1059 0055 03       		.uleb128 0x3
+ 1060 0056 0E       		.uleb128 0xe
+ 1061 0057 3A       		.uleb128 0x3a
+ 1062 0058 0B       		.uleb128 0xb
+ 1063 0059 3B       		.uleb128 0x3b
+ 1064 005a 0B       		.uleb128 0xb
+ 1065 005b 49       		.uleb128 0x49
+ 1066 005c 13       		.uleb128 0x13
+ 1067 005d 02       		.uleb128 0x2
+ 1068 005e 17       		.uleb128 0x17
+ 1069 005f 00       		.byte	0
+ 1070 0060 00       		.byte	0
+ 1071 0061 07       		.uleb128 0x7
+ 1072 0062 34       		.uleb128 0x34
+ 1073 0063 00       		.byte	0
+ 1074 0064 03       		.uleb128 0x3
+ 1075 0065 0E       		.uleb128 0xe
+ 1076 0066 3A       		.uleb128 0x3a
+ 1077 0067 0B       		.uleb128 0xb
+ 1078 0068 3B       		.uleb128 0x3b
+ 1079 0069 0B       		.uleb128 0xb
+ 1080 006a 49       		.uleb128 0x49
+ 1081 006b 13       		.uleb128 0x13
+ 1082 006c 02       		.uleb128 0x2
+ 1083 006d 18       		.uleb128 0x18
+ 1084 006e 00       		.byte	0
+ 1085 006f 00       		.byte	0
+ 1086 0070 08       		.uleb128 0x8
+ 1087 0071 34       		.uleb128 0x34
+ 1088 0072 00       		.byte	0
+ 1089 0073 03       		.uleb128 0x3
+ 1090 0074 0E       		.uleb128 0xe
+ 1091 0075 3A       		.uleb128 0x3a
+ 1092 0076 0B       		.uleb128 0xb
+ 1093 0077 3B       		.uleb128 0x3b
+ 1094 0078 0B       		.uleb128 0xb
+ 1095 0079 49       		.uleb128 0x49
+ 1096 007a 13       		.uleb128 0x13
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 22
+
+
+ 1097 007b 1C       		.uleb128 0x1c
+ 1098 007c 05       		.uleb128 0x5
+ 1099 007d 00       		.byte	0
+ 1100 007e 00       		.byte	0
+ 1101 007f 09       		.uleb128 0x9
+ 1102 0080 34       		.uleb128 0x34
+ 1103 0081 00       		.byte	0
+ 1104 0082 03       		.uleb128 0x3
+ 1105 0083 0E       		.uleb128 0xe
+ 1106 0084 3A       		.uleb128 0x3a
+ 1107 0085 0B       		.uleb128 0xb
+ 1108 0086 3B       		.uleb128 0x3b
+ 1109 0087 0B       		.uleb128 0xb
+ 1110 0088 49       		.uleb128 0x49
+ 1111 0089 13       		.uleb128 0x13
+ 1112 008a 1C       		.uleb128 0x1c
+ 1113 008b 0B       		.uleb128 0xb
+ 1114 008c 00       		.byte	0
+ 1115 008d 00       		.byte	0
+ 1116 008e 0A       		.uleb128 0xa
+ 1117 008f 34       		.uleb128 0x34
+ 1118 0090 00       		.byte	0
+ 1119 0091 03       		.uleb128 0x3
+ 1120 0092 0E       		.uleb128 0xe
+ 1121 0093 3A       		.uleb128 0x3a
+ 1122 0094 0B       		.uleb128 0xb
+ 1123 0095 3B       		.uleb128 0x3b
+ 1124 0096 0B       		.uleb128 0xb
+ 1125 0097 49       		.uleb128 0x49
+ 1126 0098 13       		.uleb128 0x13
+ 1127 0099 02       		.uleb128 0x2
+ 1128 009a 17       		.uleb128 0x17
+ 1129 009b 00       		.byte	0
+ 1130 009c 00       		.byte	0
+ 1131 009d 0B       		.uleb128 0xb
+ 1132 009e 34       		.uleb128 0x34
+ 1133 009f 00       		.byte	0
+ 1134 00a0 03       		.uleb128 0x3
+ 1135 00a1 0E       		.uleb128 0xe
+ 1136 00a2 3A       		.uleb128 0x3a
+ 1137 00a3 0B       		.uleb128 0xb
+ 1138 00a4 3B       		.uleb128 0x3b
+ 1139 00a5 0B       		.uleb128 0xb
+ 1140 00a6 49       		.uleb128 0x49
+ 1141 00a7 13       		.uleb128 0x13
+ 1142 00a8 1C       		.uleb128 0x1c
+ 1143 00a9 0A       		.uleb128 0xa
+ 1144 00aa 00       		.byte	0
+ 1145 00ab 00       		.byte	0
+ 1146 00ac 0C       		.uleb128 0xc
+ 1147 00ad 34       		.uleb128 0x34
+ 1148 00ae 00       		.byte	0
+ 1149 00af 03       		.uleb128 0x3
+ 1150 00b0 08       		.uleb128 0x8
+ 1151 00b1 3A       		.uleb128 0x3a
+ 1152 00b2 0B       		.uleb128 0xb
+ 1153 00b3 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 23
+
+
+ 1154 00b4 0B       		.uleb128 0xb
+ 1155 00b5 49       		.uleb128 0x49
+ 1156 00b6 13       		.uleb128 0x13
+ 1157 00b7 02       		.uleb128 0x2
+ 1158 00b8 17       		.uleb128 0x17
+ 1159 00b9 00       		.byte	0
+ 1160 00ba 00       		.byte	0
+ 1161 00bb 0D       		.uleb128 0xd
+ 1162 00bc 34       		.uleb128 0x34
+ 1163 00bd 00       		.byte	0
+ 1164 00be 03       		.uleb128 0x3
+ 1165 00bf 08       		.uleb128 0x8
+ 1166 00c0 3A       		.uleb128 0x3a
+ 1167 00c1 0B       		.uleb128 0xb
+ 1168 00c2 3B       		.uleb128 0x3b
+ 1169 00c3 0B       		.uleb128 0xb
+ 1170 00c4 49       		.uleb128 0x49
+ 1171 00c5 13       		.uleb128 0x13
+ 1172 00c6 1C       		.uleb128 0x1c
+ 1173 00c7 0A       		.uleb128 0xa
+ 1174 00c8 00       		.byte	0
+ 1175 00c9 00       		.byte	0
+ 1176 00ca 0E       		.uleb128 0xe
+ 1177 00cb 898201   		.uleb128 0x4109
+ 1178 00ce 00       		.byte	0
+ 1179 00cf 11       		.uleb128 0x11
+ 1180 00d0 01       		.uleb128 0x1
+ 1181 00d1 31       		.uleb128 0x31
+ 1182 00d2 13       		.uleb128 0x13
+ 1183 00d3 00       		.byte	0
+ 1184 00d4 00       		.byte	0
+ 1185 00d5 0F       		.uleb128 0xf
+ 1186 00d6 898201   		.uleb128 0x4109
+ 1187 00d9 01       		.byte	0x1
+ 1188 00da 11       		.uleb128 0x11
+ 1189 00db 01       		.uleb128 0x1
+ 1190 00dc 31       		.uleb128 0x31
+ 1191 00dd 13       		.uleb128 0x13
+ 1192 00de 01       		.uleb128 0x1
+ 1193 00df 13       		.uleb128 0x13
+ 1194 00e0 00       		.byte	0
+ 1195 00e1 00       		.byte	0
+ 1196 00e2 10       		.uleb128 0x10
+ 1197 00e3 8A8201   		.uleb128 0x410a
+ 1198 00e6 00       		.byte	0
+ 1199 00e7 02       		.uleb128 0x2
+ 1200 00e8 18       		.uleb128 0x18
+ 1201 00e9 9142     		.uleb128 0x2111
+ 1202 00eb 18       		.uleb128 0x18
+ 1203 00ec 00       		.byte	0
+ 1204 00ed 00       		.byte	0
+ 1205 00ee 11       		.uleb128 0x11
+ 1206 00ef 898201   		.uleb128 0x4109
+ 1207 00f2 01       		.byte	0x1
+ 1208 00f3 11       		.uleb128 0x11
+ 1209 00f4 01       		.uleb128 0x1
+ 1210 00f5 31       		.uleb128 0x31
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 24
+
+
+ 1211 00f6 13       		.uleb128 0x13
+ 1212 00f7 00       		.byte	0
+ 1213 00f8 00       		.byte	0
+ 1214 00f9 12       		.uleb128 0x12
+ 1215 00fa 34       		.uleb128 0x34
+ 1216 00fb 00       		.byte	0
+ 1217 00fc 03       		.uleb128 0x3
+ 1218 00fd 0E       		.uleb128 0xe
+ 1219 00fe 3A       		.uleb128 0x3a
+ 1220 00ff 0B       		.uleb128 0xb
+ 1221 0100 3B       		.uleb128 0x3b
+ 1222 0101 05       		.uleb128 0x5
+ 1223 0102 49       		.uleb128 0x49
+ 1224 0103 13       		.uleb128 0x13
+ 1225 0104 3F       		.uleb128 0x3f
+ 1226 0105 19       		.uleb128 0x19
+ 1227 0106 3C       		.uleb128 0x3c
+ 1228 0107 19       		.uleb128 0x19
+ 1229 0108 00       		.byte	0
+ 1230 0109 00       		.byte	0
+ 1231 010a 13       		.uleb128 0x13
+ 1232 010b 35       		.uleb128 0x35
+ 1233 010c 00       		.byte	0
+ 1234 010d 49       		.uleb128 0x49
+ 1235 010e 13       		.uleb128 0x13
+ 1236 010f 00       		.byte	0
+ 1237 0110 00       		.byte	0
+ 1238 0111 14       		.uleb128 0x14
+ 1239 0112 2E       		.uleb128 0x2e
+ 1240 0113 00       		.byte	0
+ 1241 0114 3F       		.uleb128 0x3f
+ 1242 0115 19       		.uleb128 0x19
+ 1243 0116 3C       		.uleb128 0x3c
+ 1244 0117 19       		.uleb128 0x19
+ 1245 0118 6E       		.uleb128 0x6e
+ 1246 0119 0E       		.uleb128 0xe
+ 1247 011a 03       		.uleb128 0x3
+ 1248 011b 0E       		.uleb128 0xe
+ 1249 011c 3A       		.uleb128 0x3a
+ 1250 011d 0B       		.uleb128 0xb
+ 1251 011e 3B       		.uleb128 0x3b
+ 1252 011f 0B       		.uleb128 0xb
+ 1253 0120 00       		.byte	0
+ 1254 0121 00       		.byte	0
+ 1255 0122 15       		.uleb128 0x15
+ 1256 0123 2E       		.uleb128 0x2e
+ 1257 0124 00       		.byte	0
+ 1258 0125 3F       		.uleb128 0x3f
+ 1259 0126 19       		.uleb128 0x19
+ 1260 0127 3C       		.uleb128 0x3c
+ 1261 0128 19       		.uleb128 0x19
+ 1262 0129 6E       		.uleb128 0x6e
+ 1263 012a 08       		.uleb128 0x8
+ 1264 012b 03       		.uleb128 0x3
+ 1265 012c 08       		.uleb128 0x8
+ 1266 012d 3A       		.uleb128 0x3a
+ 1267 012e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 25
+
+
+ 1268 012f 3B       		.uleb128 0x3b
+ 1269 0130 0B       		.uleb128 0xb
+ 1270 0131 00       		.byte	0
+ 1271 0132 00       		.byte	0
+ 1272 0133 00       		.byte	0
+ 1273              		.section	.debug_loc,"",%progbits
+ 1274              	.Ldebug_loc0:
+ 1275              	.LLST0:
+ 1276 0000 00000000 		.4byte	.LVL0
+ 1277 0004 07000000 		.4byte	.LVL2-1
+ 1278 0008 0100     		.2byte	0x1
+ 1279 000a 50       		.byte	0x50
+ 1280 000b 07000000 		.4byte	.LVL2-1
+ 1281 000f 1C000000 		.4byte	.LFE63
+ 1282 0013 0600     		.2byte	0x6
+ 1283 0015 F3       		.byte	0xf3
+ 1284 0016 03       		.uleb128 0x3
+ 1285 0017 F5       		.byte	0xf5
+ 1286 0018 00       		.uleb128 0
+ 1287 0019 25       		.uleb128 0x25
+ 1288 001a 9F       		.byte	0x9f
+ 1289 001b 00000000 		.4byte	0
+ 1290 001f 00000000 		.4byte	0
+ 1291              	.LLST1:
+ 1292 0023 00000000 		.4byte	.LVL5
+ 1293 0027 07000000 		.4byte	.LVL7-1
+ 1294 002b 0100     		.2byte	0x1
+ 1295 002d 50       		.byte	0x50
+ 1296 002e 07000000 		.4byte	.LVL7-1
+ 1297 0032 1C000000 		.4byte	.LFE64
+ 1298 0036 0600     		.2byte	0x6
+ 1299 0038 F3       		.byte	0xf3
+ 1300 0039 03       		.uleb128 0x3
+ 1301 003a F5       		.byte	0xf5
+ 1302 003b 00       		.uleb128 0
+ 1303 003c 25       		.uleb128 0x25
+ 1304 003d 9F       		.byte	0x9f
+ 1305 003e 00000000 		.4byte	0
+ 1306 0042 00000000 		.4byte	0
+ 1307              	.LLST2:
+ 1308 0046 0A000000 		.4byte	.LVL11
+ 1309 004a 30000000 		.4byte	.LVL17
+ 1310 004e 0600     		.2byte	0x6
+ 1311 0050 9E       		.byte	0x9e
+ 1312 0051 04       		.uleb128 0x4
+ 1313 0052 00000000 		.4byte	0
+ 1314 0056 30000000 		.4byte	.LVL17
+ 1315 005a 4E000000 		.4byte	.LVL22
+ 1316 005e 0100     		.2byte	0x1
+ 1317 0060 54       		.byte	0x54
+ 1318 0061 4E000000 		.4byte	.LVL22
+ 1319 0065 50000000 		.4byte	.LVL23
+ 1320 0069 0100     		.2byte	0x1
+ 1321 006b 50       		.byte	0x50
+ 1322 006c 50000000 		.4byte	.LVL23
+ 1323 0070 F0010000 		.4byte	.LVL88
+ 1324 0074 0100     		.2byte	0x1
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 26
+
+
+ 1325 0076 5B       		.byte	0x5b
+ 1326 0077 F0010000 		.4byte	.LVL88
+ 1327 007b F4010000 		.4byte	.LVL89
+ 1328 007f 0100     		.2byte	0x1
+ 1329 0081 50       		.byte	0x50
+ 1330 0082 F4010000 		.4byte	.LVL89
+ 1331 0086 18020000 		.4byte	.LVL97
+ 1332 008a 0100     		.2byte	0x1
+ 1333 008c 54       		.byte	0x54
+ 1334 008d 18020000 		.4byte	.LVL97
+ 1335 0091 1A020000 		.4byte	.LVL98
+ 1336 0095 0100     		.2byte	0x1
+ 1337 0097 50       		.byte	0x50
+ 1338 0098 1A020000 		.4byte	.LVL98
+ 1339 009c 88020000 		.4byte	.LVL114
+ 1340 00a0 0100     		.2byte	0x1
+ 1341 00a2 54       		.byte	0x54
+ 1342 00a3 00000000 		.4byte	0
+ 1343 00a7 00000000 		.4byte	0
+ 1344              	.LLST3:
+ 1345 00ab D6010000 		.4byte	.LVL81
+ 1346 00af DA010000 		.4byte	.LVL82
+ 1347 00b3 0100     		.2byte	0x1
+ 1348 00b5 50       		.byte	0x50
+ 1349 00b6 DA010000 		.4byte	.LVL82
+ 1350 00ba F0010000 		.4byte	.LVL88
+ 1351 00be 0100     		.2byte	0x1
+ 1352 00c0 54       		.byte	0x54
+ 1353 00c1 00000000 		.4byte	0
+ 1354 00c5 00000000 		.4byte	0
+ 1355              	.LLST4:
+ 1356 00c9 CE010000 		.4byte	.LVL79
+ 1357 00cd D3010000 		.4byte	.LVL80-1
+ 1358 00d1 0100     		.2byte	0x1
+ 1359 00d3 50       		.byte	0x50
+ 1360 00d4 00000000 		.4byte	0
+ 1361 00d8 00000000 		.4byte	0
+ 1362              	.LLST5:
+ 1363 00dc 0A000000 		.4byte	.LVL11
+ 1364 00e0 30000000 		.4byte	.LVL17
+ 1365 00e4 0600     		.2byte	0x6
+ 1366 00e6 9E       		.byte	0x9e
+ 1367 00e7 04       		.uleb128 0x4
+ 1368 00e8 0000B442 		.4byte	0x42b40000
+ 1369 00ec 30000000 		.4byte	.LVL17
+ 1370 00f0 6C000000 		.4byte	.LVL28
+ 1371 00f4 0100     		.2byte	0x1
+ 1372 00f6 56       		.byte	0x56
+ 1373 00f7 6C000000 		.4byte	.LVL28
+ 1374 00fb 6E000000 		.4byte	.LVL29
+ 1375 00ff 0100     		.2byte	0x1
+ 1376 0101 50       		.byte	0x50
+ 1377 0102 6E000000 		.4byte	.LVL29
+ 1378 0106 FA010000 		.4byte	.LVL91
+ 1379 010a 0100     		.2byte	0x1
+ 1380 010c 5A       		.byte	0x5a
+ 1381 010d FA010000 		.4byte	.LVL91
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 27
+
+
+ 1382 0111 FC010000 		.4byte	.LVL92
+ 1383 0115 0100     		.2byte	0x1
+ 1384 0117 50       		.byte	0x50
+ 1385 0118 FC010000 		.4byte	.LVL92
+ 1386 011c 36020000 		.4byte	.LVL103
+ 1387 0120 0100     		.2byte	0x1
+ 1388 0122 55       		.byte	0x55
+ 1389 0123 36020000 		.4byte	.LVL103
+ 1390 0127 38020000 		.4byte	.LVL104
+ 1391 012b 0100     		.2byte	0x1
+ 1392 012d 50       		.byte	0x50
+ 1393 012e 38020000 		.4byte	.LVL104
+ 1394 0132 88020000 		.4byte	.LVL114
+ 1395 0136 0100     		.2byte	0x1
+ 1396 0138 56       		.byte	0x56
+ 1397 0139 00000000 		.4byte	0
+ 1398 013d 00000000 		.4byte	0
+ 1399              	.LLST6:
+ 1400 0141 E6010000 		.4byte	.LVL85
+ 1401 0145 EA010000 		.4byte	.LVL86
+ 1402 0149 0100     		.2byte	0x1
+ 1403 014b 50       		.byte	0x50
+ 1404 014c EA010000 		.4byte	.LVL86
+ 1405 0150 FA010000 		.4byte	.LVL91
+ 1406 0154 0100     		.2byte	0x1
+ 1407 0156 55       		.byte	0x55
+ 1408 0157 00000000 		.4byte	0
+ 1409 015b 00000000 		.4byte	0
+ 1410              	.LLST7:
+ 1411 015f DE010000 		.4byte	.LVL83
+ 1412 0163 E3010000 		.4byte	.LVL84-1
+ 1413 0167 0100     		.2byte	0x1
+ 1414 0169 50       		.byte	0x50
+ 1415 016a 00000000 		.4byte	0
+ 1416 016e 00000000 		.4byte	0
+ 1417              	.LLST8:
+ 1418 0172 9A010000 		.4byte	.LVL65
+ 1419 0176 9E010000 		.4byte	.LVL66
+ 1420 017a 0100     		.2byte	0x1
+ 1421 017c 50       		.byte	0x50
+ 1422 017d 9E010000 		.4byte	.LVL66
+ 1423 0181 A1010000 		.4byte	.LVL67-1
+ 1424 0185 0100     		.2byte	0x1
+ 1425 0187 51       		.byte	0x51
+ 1426 0188 A1010000 		.4byte	.LVL67-1
+ 1427 018c C6010000 		.4byte	.LVL77
+ 1428 0190 0100     		.2byte	0x1
+ 1429 0192 56       		.byte	0x56
+ 1430 0193 00000000 		.4byte	0
+ 1431 0197 00000000 		.4byte	0
+ 1432              	.LLST9:
+ 1433 019b A4010000 		.4byte	.LVL68
+ 1434 019f AA010000 		.4byte	.LVL69
+ 1435 01a3 0100     		.2byte	0x1
+ 1436 01a5 50       		.byte	0x50
+ 1437 01a6 AA010000 		.4byte	.LVL69
+ 1438 01aa 54020000 		.4byte	.LVL109
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 28
+
+
+ 1439 01ae 0100     		.2byte	0x1
+ 1440 01b0 57       		.byte	0x57
+ 1441 01b1 00000000 		.4byte	0
+ 1442 01b5 00000000 		.4byte	0
+ 1443              	.LLST10:
+ 1444 01b9 BC010000 		.4byte	.LVL74
+ 1445 01bd C0010000 		.4byte	.LVL75
+ 1446 01c1 0100     		.2byte	0x1
+ 1447 01c3 50       		.byte	0x50
+ 1448 01c4 C0010000 		.4byte	.LVL75
+ 1449 01c8 54020000 		.4byte	.LVL109
+ 1450 01cc 0100     		.2byte	0x1
+ 1451 01ce 58       		.byte	0x58
+ 1452 01cf 00000000 		.4byte	0
+ 1453 01d3 00000000 		.4byte	0
+ 1454              	.LLST11:
+ 1455 01d7 B0010000 		.4byte	.LVL71
+ 1456 01db B6010000 		.4byte	.LVL72
+ 1457 01df 0100     		.2byte	0x1
+ 1458 01e1 50       		.byte	0x50
+ 1459 01e2 B6010000 		.4byte	.LVL72
+ 1460 01e6 E6010000 		.4byte	.LVL85
+ 1461 01ea 0100     		.2byte	0x1
+ 1462 01ec 55       		.byte	0x55
+ 1463 01ed 00000000 		.4byte	0
+ 1464 01f1 00000000 		.4byte	0
+ 1465              	.LLST12:
+ 1466 01f5 C6010000 		.4byte	.LVL77
+ 1467 01f9 CA010000 		.4byte	.LVL78
+ 1468 01fd 0100     		.2byte	0x1
+ 1469 01ff 50       		.byte	0x50
+ 1470 0200 CA010000 		.4byte	.LVL78
+ 1471 0204 36020000 		.4byte	.LVL103
+ 1472 0208 0100     		.2byte	0x1
+ 1473 020a 56       		.byte	0x56
+ 1474 020b 00000000 		.4byte	0
+ 1475 020f 00000000 		.4byte	0
+ 1476              	.LLST13:
+ 1477 0213 0A010000 		.4byte	.LVL44
+ 1478 0217 12010000 		.4byte	.LVL45
+ 1479 021b 0100     		.2byte	0x1
+ 1480 021d 50       		.byte	0x50
+ 1481 021e 12010000 		.4byte	.LVL45
+ 1482 0222 D6010000 		.4byte	.LVL81
+ 1483 0226 0100     		.2byte	0x1
+ 1484 0228 54       		.byte	0x54
+ 1485 0229 00000000 		.4byte	0
+ 1486 022d 00000000 		.4byte	0
+ 1487              	.LLST14:
+ 1488 0231 6A010000 		.4byte	.LVL56
+ 1489 0235 6C010000 		.4byte	.LVL57
+ 1490 0239 0100     		.2byte	0x1
+ 1491 023b 50       		.byte	0x50
+ 1492 023c 6C010000 		.4byte	.LVL57
+ 1493 0240 BC010000 		.4byte	.LVL74
+ 1494 0244 0100     		.2byte	0x1
+ 1495 0246 58       		.byte	0x58
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 29
+
+
+ 1496 0247 00000000 		.4byte	0
+ 1497 024b 00000000 		.4byte	0
+ 1498              	.LLST15:
+ 1499 024f 60010000 		.4byte	.LVL53
+ 1500 0253 62010000 		.4byte	.LVL54
+ 1501 0257 0100     		.2byte	0x1
+ 1502 0259 50       		.byte	0x50
+ 1503 025a 62010000 		.4byte	.LVL54
+ 1504 025e B0010000 		.4byte	.LVL71
+ 1505 0262 0100     		.2byte	0x1
+ 1506 0264 55       		.byte	0x55
+ 1507 0265 00000000 		.4byte	0
+ 1508 0269 00000000 		.4byte	0
+ 1509              	.LLST16:
+ 1510 026d 74010000 		.4byte	.LVL59
+ 1511 0271 78010000 		.4byte	.LVL60
+ 1512 0275 0100     		.2byte	0x1
+ 1513 0277 50       		.byte	0x50
+ 1514 0278 78010000 		.4byte	.LVL60
+ 1515 027c 7B010000 		.4byte	.LVL61-1
+ 1516 0280 0100     		.2byte	0x1
+ 1517 0282 51       		.byte	0x51
+ 1518 0283 7B010000 		.4byte	.LVL61-1
+ 1519 0287 A4010000 		.4byte	.LVL68
+ 1520 028b 0100     		.2byte	0x1
+ 1521 028d 57       		.byte	0x57
+ 1522 028e 00000000 		.4byte	0
+ 1523 0292 00000000 		.4byte	0
+ 1524              		.section	.debug_aranges,"",%progbits
+ 1525 0000 2C000000 		.4byte	0x2c
+ 1526 0004 0200     		.2byte	0x2
+ 1527 0006 00000000 		.4byte	.Ldebug_info0
+ 1528 000a 04       		.byte	0x4
+ 1529 000b 00       		.byte	0
+ 1530 000c 0000     		.2byte	0
+ 1531 000e 0000     		.2byte	0
+ 1532 0010 00000000 		.4byte	.LFB63
+ 1533 0014 1C000000 		.4byte	.LFE63-.LFB63
+ 1534 0018 00000000 		.4byte	.LFB64
+ 1535 001c 1C000000 		.4byte	.LFE64-.LFB64
+ 1536 0020 00000000 		.4byte	.LFB65
+ 1537 0024 AC020000 		.4byte	.LFE65-.LFB65
+ 1538 0028 00000000 		.4byte	0
+ 1539 002c 00000000 		.4byte	0
+ 1540              		.section	.debug_ranges,"",%progbits
+ 1541              	.Ldebug_ranges0:
+ 1542 0000 00000000 		.4byte	.LFB63
+ 1543 0004 1C000000 		.4byte	.LFE63
+ 1544 0008 00000000 		.4byte	.LFB64
+ 1545 000c 1C000000 		.4byte	.LFE64
+ 1546 0010 00000000 		.4byte	.LFB65
+ 1547 0014 AC020000 		.4byte	.LFE65
+ 1548 0018 00000000 		.4byte	0
+ 1549 001c 00000000 		.4byte	0
+ 1550              		.section	.debug_line,"",%progbits
+ 1551              	.Ldebug_line0:
+ 1552 0000 36020000 		.section	.debug_str,"MS",%progbits,1
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 30
+
+
+ 1552      0200C801 
+ 1552      00000201 
+ 1552      FB0E0D00 
+ 1552      01010101 
+ 1553              	.LASF26:
+ 1554 0000 696E6372 		.ascii	"incrementTheta1\000"
+ 1554      656D656E 
+ 1554      74546865 
+ 1554      74613100 
+ 1555              	.LASF29:
+ 1556 0010 696E6372 		.ascii	"incrementTheta2\000"
+ 1556      656D656E 
+ 1556      74546865 
+ 1556      74613200 
+ 1557              	.LASF10:
+ 1558 0020 5F5F696E 		.ascii	"__int32_t\000"
+ 1558      7433325F 
+ 1558      7400
+ 1559              	.LASF5:
+ 1560 002a 6C6F6E67 		.ascii	"long int\000"
+ 1560      20696E74 
+ 1560      00
+ 1561              	.LASF16:
+ 1562 0033 436F6D70 		.ascii	"Compare\000"
+ 1562      61726500 
+ 1563              	.LASF12:
+ 1564 003b 646F7562 		.ascii	"double\000"
+ 1564      6C6500
+ 1565              	.LASF34:
+ 1566 0042 4A313169 		.ascii	"J11inv\000"
+ 1566      6E7600
+ 1567              	.LASF0:
+ 1568 0049 666C6F61 		.ascii	"float\000"
+ 1568      7400
+ 1569              	.LASF31:
+ 1570 004f 58646F74 		.ascii	"Xdot\000"
+ 1570      00
+ 1571              	.LASF32:
+ 1572 0054 59646F74 		.ascii	"Ydot\000"
+ 1572      00
+ 1573              	.LASF2:
+ 1574 0059 756E7369 		.ascii	"unsigned char\000"
+ 1574      676E6564 
+ 1574      20636861 
+ 1574      7200
+ 1575              	.LASF42:
+ 1576 0067 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1576      43313120 
+ 1576      352E342E 
+ 1576      31203230 
+ 1576      31363036 
+ 1577 009a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1577      20726576 
+ 1577      6973696F 
+ 1577      6E203233 
+ 1577      37373135 
+ 1578 00cd 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 31
+
+
+ 1578      66756E63 
+ 1578      74696F6E 
+ 1578      2D736563 
+ 1578      74696F6E 
+ 1579              	.LASF19:
+ 1580 00f5 6D696E5F 		.ascii	"min_angle\000"
+ 1580      616E676C 
+ 1580      6500
+ 1581              	.LASF21:
+ 1582 00ff 54686574 		.ascii	"Theta1\000"
+ 1582      613100
+ 1583              	.LASF22:
+ 1584 0106 54686574 		.ascii	"Theta2\000"
+ 1584      613200
+ 1585              	.LASF4:
+ 1586 010d 73686F72 		.ascii	"short unsigned int\000"
+ 1586      7420756E 
+ 1586      7369676E 
+ 1586      65642069 
+ 1586      6E7400
+ 1587              	.LASF27:
+ 1588 0120 54686574 		.ascii	"Theta1dot\000"
+ 1588      6131646F 
+ 1588      7400
+ 1589              	.LASF45:
+ 1590 012a 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1590      52784275 
+ 1590      66666572 
+ 1590      00
+ 1591              	.LASF33:
+ 1592 0137 6D756C74 		.ascii	"multiplier\000"
+ 1592      69706C69 
+ 1592      657200
+ 1593              	.LASF38:
+ 1594 0142 53657276 		.ascii	"Servos_Start\000"
+ 1594      6F735F53 
+ 1594      74617274 
+ 1594      00
+ 1595              	.LASF17:
+ 1596 014f 6D61785F 		.ascii	"max_comp\000"
+ 1596      636F6D70 
+ 1596      00
+ 1597              	.LASF35:
+ 1598 0158 4A313269 		.ascii	"J12inv\000"
+ 1598      6E7600
+ 1599              	.LASF36:
+ 1600 015f 4A323169 		.ascii	"J21inv\000"
+ 1600      6E7600
+ 1601              	.LASF24:
+ 1602 0166 6D61696E 		.ascii	"main\000"
+ 1602      00
+ 1603              	.LASF6:
+ 1604 016b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1604      20756E73 
+ 1604      69676E65 
+ 1604      6420696E 
+ 1604      7400
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 32
+
+
+ 1605              	.LASF9:
+ 1606 017d 756E7369 		.ascii	"unsigned int\000"
+ 1606      676E6564 
+ 1606      20696E74 
+ 1606      00
+ 1607              	.LASF23:
+ 1608 018a 416E676C 		.ascii	"Angle\000"
+ 1608      6500
+ 1609              	.LASF25:
+ 1610 0190 416E676C 		.ascii	"Angle1\000"
+ 1610      653100
+ 1611              	.LASF28:
+ 1612 0197 416E676C 		.ascii	"Angle2\000"
+ 1612      653200
+ 1613              	.LASF8:
+ 1614 019e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1614      206C6F6E 
+ 1614      6720756E 
+ 1614      7369676E 
+ 1614      65642069 
+ 1615              	.LASF30:
+ 1616 01b5 54686574 		.ascii	"Theta2dot\000"
+ 1616      6132646F 
+ 1616      7400
+ 1617              	.LASF11:
+ 1618 01bf 696E7433 		.ascii	"int32_t\000"
+ 1618      325F7400 
+ 1619              	.LASF15:
+ 1620 01c7 73697A65 		.ascii	"sizetype\000"
+ 1620      74797065 
+ 1620      00
+ 1621              	.LASF7:
+ 1622 01d0 6C6F6E67 		.ascii	"long long int\000"
+ 1622      206C6F6E 
+ 1622      6720696E 
+ 1622      7400
+ 1623              	.LASF43:
+ 1624 01de 6D61696E 		.ascii	"main.c\000"
+ 1624      2E6300
+ 1625              	.LASF13:
+ 1626 01e5 63686172 		.ascii	"char\000"
+ 1626      00
+ 1627              	.LASF37:
+ 1628 01ea 4A323269 		.ascii	"J22inv\000"
+ 1628      6E7600
+ 1629              	.LASF20:
+ 1630 01f1 6D61785F 		.ascii	"max_angle\000"
+ 1630      616E676C 
+ 1630      6500
+ 1631              	.LASF3:
+ 1632 01fb 73686F72 		.ascii	"short int\000"
+ 1632      7420696E 
+ 1632      7400
+ 1633              	.LASF39:
+ 1634 0205 53657276 		.ascii	"Servos_WriteCompare1\000"
+ 1634      6F735F57 
+ 1634      72697465 
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\cc5gHdnk.s 			page 33
+
+
+ 1634      436F6D70 
+ 1634      61726531 
+ 1635              	.LASF40:
+ 1636 021a 53657276 		.ascii	"Servos_WriteCompare2\000"
+ 1636      6F735F57 
+ 1636      72697465 
+ 1636      436F6D70 
+ 1636      61726532 
+ 1637              	.LASF14:
+ 1638 022f 6C6F6E67 		.ascii	"long double\000"
+ 1638      20646F75 
+ 1638      626C6500 
+ 1639              	.LASF1:
+ 1640 023b 7369676E 		.ascii	"signed char\000"
+ 1640      65642063 
+ 1640      68617200 
+ 1641              	.LASF18:
+ 1642 0247 6D696E5F 		.ascii	"min_comp\000"
+ 1642      636F6D70 
+ 1642      00
+ 1643              	.LASF41:
+ 1644 0250 43794465 		.ascii	"CyDelay\000"
+ 1644      6C617900 
+ 1645              	.LASF44:
+ 1646 0258 433A5C55 		.ascii	"C:\\Users\\Jorge\\Documents\\PSoC Creator\\Robotics"
+ 1646      73657273 
+ 1646      5C4A6F72 
+ 1646      67655C44 
+ 1646      6F63756D 
+ 1647 0286 315C4A61 		.ascii	"1\\Jacobian.cydsn\000"
+ 1647      636F6269 
+ 1647      616E2E63 
+ 1647      7964736E 
+ 1647      00
+ 1648              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
