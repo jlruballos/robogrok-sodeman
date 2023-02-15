@@ -1,0 +1,1212 @@
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	__aeabi_fmul
+  20              		.global	__aeabi_fadd
+  21              		.global	__aeabi_f2iz
+  22              		.section	.text.Theta1,"ax",%progbits
+  23              		.align	2
+  24              		.global	Theta1
+  25              		.thumb
+  26              		.thumb_func
+  27              		.type	Theta1, %function
+  28              	Theta1:
+  29              	.LFB63:
+  30              		.file 1 "main.c"
+   1:main.c        **** #include "project.h"
+   2:main.c        **** #include "math.h"
+   3:main.c        **** 
+   4:main.c        **** int Theta1(float Angle)
+   5:main.c        ****     {
+  31              		.loc 1 5 0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 0, uses_anonymous_args = 0
+  35              	.LVL0:
+  36 0000 08B5     		push	{r3, lr}
+  37              		.cfi_def_cfa_offset 8
+  38              		.cfi_offset 3, -8
+  39              		.cfi_offset 14, -4
+  40              	.LVL1:
+   6:main.c        ****         int Compare;
+   7:main.c        ****         int max_comp=1400;
+   8:main.c        ****         int min_comp=7250;
+   9:main.c        ****         int min_angle=0;
+  10:main.c        ****         int max_angle=180;
+  11:main.c        ****         Compare=((max_comp-min_comp)/(max_angle-min_angle))*(Angle-min_angle)+min_comp;
+  41              		.loc 1 11 0
+  42 0002 4FF04241 		mov	r1, #-1040187392
+  43 0006 FFF7FEFF 		bl	__aeabi_fmul
+  44              	.LVL2:
+  45 000a 0349     		ldr	r1, .L3
+  46 000c FFF7FEFF 		bl	__aeabi_fadd
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 2
+
+
+  47              	.LVL3:
+  48 0010 FFF7FEFF 		bl	__aeabi_f2iz
+  49              	.LVL4:
+  12:main.c        ****         return Compare;
+  13:main.c        ****     }
+  50              		.loc 1 13 0
+  51 0014 08BD     		pop	{r3, pc}
+  52              	.L4:
+  53 0016 00BF     		.align	2
+  54              	.L3:
+  55 0018 0090E245 		.word	1172475904
+  56              		.cfi_endproc
+  57              	.LFE63:
+  58              		.size	Theta1, .-Theta1
+  59              		.section	.text.Theta2,"ax",%progbits
+  60              		.align	2
+  61              		.global	Theta2
+  62              		.thumb
+  63              		.thumb_func
+  64              		.type	Theta2, %function
+  65              	Theta2:
+  66              	.LFB64:
+  14:main.c        ****     
+  15:main.c        ****     int Theta2(float Angle)
+  16:main.c        ****     {
+  67              		.loc 1 16 0
+  68              		.cfi_startproc
+  69              		@ args = 0, pretend = 0, frame = 0
+  70              		@ frame_needed = 0, uses_anonymous_args = 0
+  71              	.LVL5:
+  72 0000 08B5     		push	{r3, lr}
+  73              		.cfi_def_cfa_offset 8
+  74              		.cfi_offset 3, -8
+  75              		.cfi_offset 14, -4
+  76              	.LVL6:
+  17:main.c        ****         int Compare;
+  18:main.c        ****         int max_comp=1300;
+  19:main.c        ****         int min_comp=7300;
+  20:main.c        ****         int min_angle=-90;
+  21:main.c        ****         int max_angle=90;
+  22:main.c        ****         Compare=((max_comp-min_comp)/(max_angle-min_angle))*(Angle-min_angle)+min_comp;
+  77              		.loc 1 22 0
+  78 0002 0649     		ldr	r1, .L7
+  79 0004 FFF7FEFF 		bl	__aeabi_fadd
+  80              	.LVL7:
+  81 0008 0549     		ldr	r1, .L7+4
+  82 000a FFF7FEFF 		bl	__aeabi_fmul
+  83              	.LVL8:
+  84 000e 0549     		ldr	r1, .L7+8
+  85 0010 FFF7FEFF 		bl	__aeabi_fadd
+  86              	.LVL9:
+  87 0014 FFF7FEFF 		bl	__aeabi_f2iz
+  88              	.LVL10:
+  23:main.c        ****         return Compare;
+  24:main.c        ****     }
+  89              		.loc 1 24 0
+  90 0018 08BD     		pop	{r3, pc}
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 3
+
+
+  91              	.L8:
+  92 001a 00BF     		.align	2
+  93              	.L7:
+  94 001c 0000B442 		.word	1119092736
+  95 0020 000004C2 		.word	-1039925248
+  96 0024 0020E445 		.word	1172578304
+  97              		.cfi_endproc
+  98              	.LFE64:
+  99              		.size	Theta2, .-Theta2
+ 100              		.section	.text.main,"ax",%progbits
+ 101              		.align	2
+ 102              		.global	main
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.type	main, %function
+ 106              	main:
+ 107              	.LFB65:
+  25:main.c        ****     
+  26:main.c        **** int main(void)
+  27:main.c        **** {
+ 108              		.loc 1 27 0
+ 109              		.cfi_startproc
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112 0000 08B5     		push	{r3, lr}
+ 113              		.cfi_def_cfa_offset 8
+ 114              		.cfi_offset 3, -8
+ 115              		.cfi_offset 14, -4
+ 116              	.LVL11:
+  28:main.c        ****     float X=8.0; //Desired X postion of the end-effector in cm
+  29:main.c        ****     float Y=8.0; //Desired Y postion of the end-effector in cm
+  30:main.c        ****     float r1=0.0;
+  31:main.c        ****     float phi1=0.0;
+  32:main.c        ****     float phi2=0.0;
+  33:main.c        ****     float phi3=0.0;
+  34:main.c        ****     float a2=6.0;
+  35:main.c        ****     float a4=5.5;
+  36:main.c        ****     float T1=0.0;//T1 is theta 1 in radians
+  37:main.c        ****     float T2=0.0;//T2 is theta 2 in radians
+  38:main.c        ****     
+  39:main.c        ****     r1=sqrt(X*X+Y*Y);
+  40:main.c        ****     
+  41:main.c        ****     
+  42:main.c        ****     PWM_1_Start(); //Eq.1
+ 117              		.loc 1 42 0
+ 118 0002 FFF7FEFF 		bl	PWM_1_Start
+ 119              	.LVL12:
+ 120              	.L10:
+  43:main.c        ****     phi1=acos(((a4*a4)-(a2*a2)-(r1*r1))/(-2.0*a2*r1));//Eq.2
+  44:main.c        ****     phi2=atan(Y/X);//Eq.3
+  45:main.c        ****     T1=phi2-phi1;//Eq.4
+  46:main.c        ****     phi3=acos(((r1*r1)-(a2*a2)-(a4*a4))/(-2.0*a2*a4));//Eq.5
+  47:main.c        ****     T2=3.14159-phi3;//Eq.6
+  48:main.c        ****     
+  49:main.c        ****     for(;;)
+  50:main.c        ****     {   
+  51:main.c        ****        PWM_1_WriteCompare1(Theta1((T1/3.14159)*180.0)); //send servo 1 to clockwise position
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 4
+
+
+ 121              		.loc 1 51 0 discriminator 1
+ 122 0006 0A48     		ldr	r0, .L12
+ 123 0008 FFF7FEFF 		bl	Theta1
+ 124              	.LVL13:
+ 125 000c 80B2     		uxth	r0, r0
+ 126 000e FFF7FEFF 		bl	PWM_1_WriteCompare1
+ 127              	.LVL14:
+  52:main.c        ****        CyDelay(2000);
+ 128              		.loc 1 52 0 discriminator 1
+ 129 0012 4FF4FA60 		mov	r0, #2000
+ 130 0016 FFF7FEFF 		bl	CyDelay
+ 131              	.LVL15:
+  53:main.c        ****        PWM_1_WriteCompare2(Theta2((T2/3.14159)*180.0)); //Send servo 2 to counterclockwise position
+ 132              		.loc 1 53 0 discriminator 1
+ 133 001a 0648     		ldr	r0, .L12+4
+ 134 001c FFF7FEFF 		bl	Theta2
+ 135              	.LVL16:
+ 136 0020 80B2     		uxth	r0, r0
+ 137 0022 FFF7FEFF 		bl	PWM_1_WriteCompare2
+ 138              	.LVL17:
+  54:main.c        ****        CyDelay(2000);
+ 139              		.loc 1 54 0 discriminator 1
+ 140 0026 4FF4FA60 		mov	r0, #2000
+ 141 002a FFF7FEFF 		bl	CyDelay
+ 142              	.LVL18:
+ 143 002e EAE7     		b	.L10
+ 144              	.L13:
+ 145              		.align	2
+ 146              	.L12:
+ 147 0030 5B780C42 		.word	1108113499
+ 148 0034 8863A541 		.word	1101357960
+ 149              		.cfi_endproc
+ 150              	.LFE65:
+ 151              		.size	main, .-main
+ 152              		.text
+ 153              	.Letext0:
+ 154              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 155              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 156              		.file 4 "Generated_Source\\PSoC5/PWM_1.h"
+ 157              		.file 5 "Generated_Source\\PSoC5/CyLib.h"
+ 158              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 159              		.section	.debug_info,"",%progbits
+ 160              	.Ldebug_info0:
+ 161 0000 AE020000 		.4byte	0x2ae
+ 162 0004 0400     		.2byte	0x4
+ 163 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 164 000a 04       		.byte	0x4
+ 165 000b 01       		.uleb128 0x1
+ 166 000c 5D000000 		.4byte	.LASF31
+ 167 0010 0C       		.byte	0xc
+ 168 0011 95010000 		.4byte	.LASF32
+ 169 0015 B5010000 		.4byte	.LASF33
+ 170 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 171 001d 00000000 		.4byte	0
+ 172 0021 00000000 		.4byte	.Ldebug_line0
+ 173 0025 02       		.uleb128 0x2
+ 174 0026 04       		.byte	0x4
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 5
+
+
+ 175 0027 04       		.byte	0x4
+ 176 0028 49000000 		.4byte	.LASF0
+ 177 002c 02       		.uleb128 0x2
+ 178 002d 01       		.byte	0x1
+ 179 002e 06       		.byte	0x6
+ 180 002f 07020000 		.4byte	.LASF1
+ 181 0033 02       		.uleb128 0x2
+ 182 0034 01       		.byte	0x1
+ 183 0035 08       		.byte	0x8
+ 184 0036 4F000000 		.4byte	.LASF2
+ 185 003a 02       		.uleb128 0x2
+ 186 003b 02       		.byte	0x2
+ 187 003c 05       		.byte	0x5
+ 188 003d AB010000 		.4byte	.LASF3
+ 189 0041 02       		.uleb128 0x2
+ 190 0042 02       		.byte	0x2
+ 191 0043 07       		.byte	0x7
+ 192 0044 74010000 		.4byte	.LASF4
+ 193 0048 03       		.uleb128 0x3
+ 194 0049 0F000000 		.4byte	.LASF10
+ 195 004d 02       		.byte	0x2
+ 196 004e 3F       		.byte	0x3f
+ 197 004f 53000000 		.4byte	0x53
+ 198 0053 02       		.uleb128 0x2
+ 199 0054 04       		.byte	0x4
+ 200 0055 05       		.byte	0x5
+ 201 0056 F2010000 		.4byte	.LASF5
+ 202 005a 02       		.uleb128 0x2
+ 203 005b 04       		.byte	0x4
+ 204 005c 07       		.byte	0x7
+ 205 005d F2000000 		.4byte	.LASF6
+ 206 0061 02       		.uleb128 0x2
+ 207 0062 08       		.byte	0x8
+ 208 0063 05       		.byte	0x5
+ 209 0064 87010000 		.4byte	.LASF7
+ 210 0068 02       		.uleb128 0x2
+ 211 0069 08       		.byte	0x8
+ 212 006a 07       		.byte	0x7
+ 213 006b 4C010000 		.4byte	.LASF8
+ 214 006f 04       		.uleb128 0x4
+ 215 0070 04       		.byte	0x4
+ 216 0071 05       		.byte	0x5
+ 217 0072 696E7400 		.ascii	"int\000"
+ 218 0076 02       		.uleb128 0x2
+ 219 0077 04       		.byte	0x4
+ 220 0078 07       		.byte	0x7
+ 221 0079 39010000 		.4byte	.LASF9
+ 222 007d 03       		.uleb128 0x3
+ 223 007e 63010000 		.4byte	.LASF11
+ 224 0082 03       		.byte	0x3
+ 225 0083 2C       		.byte	0x2c
+ 226 0084 48000000 		.4byte	0x48
+ 227 0088 02       		.uleb128 0x2
+ 228 0089 08       		.byte	0x8
+ 229 008a 04       		.byte	0x4
+ 230 008b 24010000 		.4byte	.LASF12
+ 231 008f 02       		.uleb128 0x2
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 6
+
+
+ 232 0090 01       		.byte	0x1
+ 233 0091 08       		.byte	0x8
+ 234 0092 9C010000 		.4byte	.LASF13
+ 235 0096 02       		.uleb128 0x2
+ 236 0097 08       		.byte	0x8
+ 237 0098 04       		.byte	0x4
+ 238 0099 FB010000 		.4byte	.LASF14
+ 239 009d 02       		.uleb128 0x2
+ 240 009e 04       		.byte	0x4
+ 241 009f 07       		.byte	0x7
+ 242 00a0 6B010000 		.4byte	.LASF15
+ 243 00a4 05       		.uleb128 0x5
+ 244 00a5 1D010000 		.4byte	.LASF21
+ 245 00a9 01       		.byte	0x1
+ 246 00aa 04       		.byte	0x4
+ 247 00ab 6F000000 		.4byte	0x6f
+ 248 00af 00000000 		.4byte	.LFB63
+ 249 00b3 1C000000 		.4byte	.LFE63-.LFB63
+ 250 00b7 01       		.uleb128 0x1
+ 251 00b8 9C       		.byte	0x9c
+ 252 00b9 0C010000 		.4byte	0x10c
+ 253 00bd 06       		.uleb128 0x6
+ 254 00be 46010000 		.4byte	.LASF23
+ 255 00c2 01       		.byte	0x1
+ 256 00c3 04       		.byte	0x4
+ 257 00c4 25000000 		.4byte	0x25
+ 258 00c8 00000000 		.4byte	.LLST0
+ 259 00cc 07       		.uleb128 0x7
+ 260 00cd 19000000 		.4byte	.LASF16
+ 261 00d1 01       		.byte	0x1
+ 262 00d2 06       		.byte	0x6
+ 263 00d3 6F000000 		.4byte	0x6f
+ 264 00d7 01       		.uleb128 0x1
+ 265 00d8 50       		.byte	0x50
+ 266 00d9 08       		.uleb128 0x8
+ 267 00da 2B010000 		.4byte	.LASF17
+ 268 00de 01       		.byte	0x1
+ 269 00df 07       		.byte	0x7
+ 270 00e0 6F000000 		.4byte	0x6f
+ 271 00e4 7805     		.2byte	0x578
+ 272 00e6 08       		.uleb128 0x8
+ 273 00e7 13020000 		.4byte	.LASF18
+ 274 00eb 01       		.byte	0x1
+ 275 00ec 08       		.byte	0x8
+ 276 00ed 6F000000 		.4byte	0x6f
+ 277 00f1 521C     		.2byte	0x1c52
+ 278 00f3 09       		.uleb128 0x9
+ 279 00f4 1C020000 		.4byte	.LASF19
+ 280 00f8 01       		.byte	0x1
+ 281 00f9 09       		.byte	0x9
+ 282 00fa 6F000000 		.4byte	0x6f
+ 283 00fe 00       		.byte	0
+ 284 00ff 09       		.uleb128 0x9
+ 285 0100 A1010000 		.4byte	.LASF20
+ 286 0104 01       		.byte	0x1
+ 287 0105 0A       		.byte	0xa
+ 288 0106 6F000000 		.4byte	0x6f
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 7
+
+
+ 289 010a B4       		.byte	0xb4
+ 290 010b 00       		.byte	0
+ 291 010c 05       		.uleb128 0x5
+ 292 010d EB000000 		.4byte	.LASF22
+ 293 0111 01       		.byte	0x1
+ 294 0112 0F       		.byte	0xf
+ 295 0113 6F000000 		.4byte	0x6f
+ 296 0117 00000000 		.4byte	.LFB64
+ 297 011b 28000000 		.4byte	.LFE64-.LFB64
+ 298 011f 01       		.uleb128 0x1
+ 299 0120 9C       		.byte	0x9c
+ 300 0121 75010000 		.4byte	0x175
+ 301 0125 06       		.uleb128 0x6
+ 302 0126 46010000 		.4byte	.LASF23
+ 303 012a 01       		.byte	0x1
+ 304 012b 0F       		.byte	0xf
+ 305 012c 25000000 		.4byte	0x25
+ 306 0130 23000000 		.4byte	.LLST1
+ 307 0134 07       		.uleb128 0x7
+ 308 0135 19000000 		.4byte	.LASF16
+ 309 0139 01       		.byte	0x1
+ 310 013a 11       		.byte	0x11
+ 311 013b 6F000000 		.4byte	0x6f
+ 312 013f 01       		.uleb128 0x1
+ 313 0140 50       		.byte	0x50
+ 314 0141 08       		.uleb128 0x8
+ 315 0142 2B010000 		.4byte	.LASF17
+ 316 0146 01       		.byte	0x1
+ 317 0147 12       		.byte	0x12
+ 318 0148 6F000000 		.4byte	0x6f
+ 319 014c 1405     		.2byte	0x514
+ 320 014e 08       		.uleb128 0x8
+ 321 014f 13020000 		.4byte	.LASF18
+ 322 0153 01       		.byte	0x1
+ 323 0154 13       		.byte	0x13
+ 324 0155 6F000000 		.4byte	0x6f
+ 325 0159 841C     		.2byte	0x1c84
+ 326 015b 0A       		.uleb128 0xa
+ 327 015c 1C020000 		.4byte	.LASF19
+ 328 0160 01       		.byte	0x1
+ 329 0161 14       		.byte	0x14
+ 330 0162 6F000000 		.4byte	0x6f
+ 331 0166 A67F     		.sleb128 -90
+ 332 0168 09       		.uleb128 0x9
+ 333 0169 A1010000 		.4byte	.LASF20
+ 334 016d 01       		.byte	0x1
+ 335 016e 15       		.byte	0x15
+ 336 016f 6F000000 		.4byte	0x6f
+ 337 0173 5A       		.byte	0x5a
+ 338 0174 00       		.byte	0
+ 339 0175 0B       		.uleb128 0xb
+ 340 0176 34010000 		.4byte	.LASF34
+ 341 017a 01       		.byte	0x1
+ 342 017b 1A       		.byte	0x1a
+ 343 017c 6F000000 		.4byte	0x6f
+ 344 0180 00000000 		.4byte	.LFB65
+ 345 0184 38000000 		.4byte	.LFE65-.LFB65
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 8
+
+
+ 346 0188 01       		.uleb128 0x1
+ 347 0189 9C       		.byte	0x9c
+ 348 018a 74020000 		.4byte	0x274
+ 349 018e 0C       		.uleb128 0xc
+ 350 018f 5800     		.ascii	"X\000"
+ 351 0191 01       		.byte	0x1
+ 352 0192 1C       		.byte	0x1c
+ 353 0193 25000000 		.4byte	0x25
+ 354 0197 04       		.byte	0x4
+ 355 0198 00000041 		.4byte	0x41000000
+ 356 019c 0C       		.uleb128 0xc
+ 357 019d 5900     		.ascii	"Y\000"
+ 358 019f 01       		.byte	0x1
+ 359 01a0 1D       		.byte	0x1d
+ 360 01a1 25000000 		.4byte	0x25
+ 361 01a5 04       		.byte	0x4
+ 362 01a6 00000041 		.4byte	0x41000000
+ 363 01aa 0C       		.uleb128 0xc
+ 364 01ab 723100   		.ascii	"r1\000"
+ 365 01ae 01       		.byte	0x1
+ 366 01af 1E       		.byte	0x1e
+ 367 01b0 25000000 		.4byte	0x25
+ 368 01b4 04       		.byte	0x4
+ 369 01b5 F3043541 		.4byte	0x413504f3
+ 370 01b9 0D       		.uleb128 0xd
+ 371 01ba 00000000 		.4byte	.LASF24
+ 372 01be 01       		.byte	0x1
+ 373 01bf 1F       		.byte	0x1f
+ 374 01c0 25000000 		.4byte	0x25
+ 375 01c4 46000000 		.4byte	.LLST2
+ 376 01c8 0D       		.uleb128 0xd
+ 377 01c9 05000000 		.4byte	.LASF25
+ 378 01cd 01       		.byte	0x1
+ 379 01ce 20       		.byte	0x20
+ 380 01cf 25000000 		.4byte	0x25
+ 381 01d3 6E000000 		.4byte	.LLST3
+ 382 01d7 0D       		.uleb128 0xd
+ 383 01d8 0A000000 		.4byte	.LASF26
+ 384 01dc 01       		.byte	0x1
+ 385 01dd 21       		.byte	0x21
+ 386 01de 25000000 		.4byte	0x25
+ 387 01e2 96000000 		.4byte	.LLST4
+ 388 01e6 0C       		.uleb128 0xc
+ 389 01e7 613200   		.ascii	"a2\000"
+ 390 01ea 01       		.byte	0x1
+ 391 01eb 22       		.byte	0x22
+ 392 01ec 25000000 		.4byte	0x25
+ 393 01f0 04       		.byte	0x4
+ 394 01f1 0000C040 		.4byte	0x40c00000
+ 395 01f5 0C       		.uleb128 0xc
+ 396 01f6 613400   		.ascii	"a4\000"
+ 397 01f9 01       		.byte	0x1
+ 398 01fa 23       		.byte	0x23
+ 399 01fb 25000000 		.4byte	0x25
+ 400 01ff 04       		.byte	0x4
+ 401 0200 0000B040 		.4byte	0x40b00000
+ 402 0204 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 9
+
+
+ 403 0205 543100   		.ascii	"T1\000"
+ 404 0208 01       		.byte	0x1
+ 405 0209 24       		.byte	0x24
+ 406 020a 25000000 		.4byte	0x25
+ 407 020e BE000000 		.4byte	.LLST5
+ 408 0212 0E       		.uleb128 0xe
+ 409 0213 543200   		.ascii	"T2\000"
+ 410 0216 01       		.byte	0x1
+ 411 0217 25       		.byte	0x25
+ 412 0218 25000000 		.4byte	0x25
+ 413 021c E6000000 		.4byte	.LLST6
+ 414 0220 0F       		.uleb128 0xf
+ 415 0221 06000000 		.4byte	.LVL12
+ 416 0225 85020000 		.4byte	0x285
+ 417 0229 0F       		.uleb128 0xf
+ 418 022a 0C000000 		.4byte	.LVL13
+ 419 022e A4000000 		.4byte	0xa4
+ 420 0232 0F       		.uleb128 0xf
+ 421 0233 12000000 		.4byte	.LVL14
+ 422 0237 90020000 		.4byte	0x290
+ 423 023b 10       		.uleb128 0x10
+ 424 023c 1A000000 		.4byte	.LVL15
+ 425 0240 9B020000 		.4byte	0x29b
+ 426 0244 50020000 		.4byte	0x250
+ 427 0248 11       		.uleb128 0x11
+ 428 0249 01       		.uleb128 0x1
+ 429 024a 50       		.byte	0x50
+ 430 024b 03       		.uleb128 0x3
+ 431 024c 0A       		.byte	0xa
+ 432 024d D007     		.2byte	0x7d0
+ 433 024f 00       		.byte	0
+ 434 0250 0F       		.uleb128 0xf
+ 435 0251 20000000 		.4byte	.LVL16
+ 436 0255 0C010000 		.4byte	0x10c
+ 437 0259 0F       		.uleb128 0xf
+ 438 025a 26000000 		.4byte	.LVL17
+ 439 025e A6020000 		.4byte	0x2a6
+ 440 0262 12       		.uleb128 0x12
+ 441 0263 2E000000 		.4byte	.LVL18
+ 442 0267 9B020000 		.4byte	0x29b
+ 443 026b 11       		.uleb128 0x11
+ 444 026c 01       		.uleb128 0x1
+ 445 026d 50       		.byte	0x50
+ 446 026e 03       		.uleb128 0x3
+ 447 026f 0A       		.byte	0xa
+ 448 0270 D007     		.2byte	0x7d0
+ 449 0272 00       		.byte	0
+ 450 0273 00       		.byte	0
+ 451 0274 13       		.uleb128 0x13
+ 452 0275 10010000 		.4byte	.LASF35
+ 453 0279 06       		.byte	0x6
+ 454 027a 1207     		.2byte	0x712
+ 455 027c 80020000 		.4byte	0x280
+ 456 0280 14       		.uleb128 0x14
+ 457 0281 7D000000 		.4byte	0x7d
+ 458 0285 15       		.uleb128 0x15
+ 459 0286 04010000 		.4byte	.LASF27
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 10
+
+
+ 460 028a 04010000 		.4byte	.LASF27
+ 461 028e 04       		.byte	0x4
+ 462 028f 92       		.byte	0x92
+ 463 0290 15       		.uleb128 0x15
+ 464 0291 21000000 		.4byte	.LASF28
+ 465 0295 21000000 		.4byte	.LASF28
+ 466 0299 04       		.byte	0x4
+ 467 029a C7       		.byte	0xc7
+ 468 029b 15       		.uleb128 0x15
+ 469 029c 26020000 		.4byte	.LASF29
+ 470 02a0 26020000 		.4byte	.LASF29
+ 471 02a4 05       		.byte	0x5
+ 472 02a5 76       		.byte	0x76
+ 473 02a6 15       		.uleb128 0x15
+ 474 02a7 35000000 		.4byte	.LASF30
+ 475 02ab 35000000 		.4byte	.LASF30
+ 476 02af 04       		.byte	0x4
+ 477 02b0 CA       		.byte	0xca
+ 478 02b1 00       		.byte	0
+ 479              		.section	.debug_abbrev,"",%progbits
+ 480              	.Ldebug_abbrev0:
+ 481 0000 01       		.uleb128 0x1
+ 482 0001 11       		.uleb128 0x11
+ 483 0002 01       		.byte	0x1
+ 484 0003 25       		.uleb128 0x25
+ 485 0004 0E       		.uleb128 0xe
+ 486 0005 13       		.uleb128 0x13
+ 487 0006 0B       		.uleb128 0xb
+ 488 0007 03       		.uleb128 0x3
+ 489 0008 0E       		.uleb128 0xe
+ 490 0009 1B       		.uleb128 0x1b
+ 491 000a 0E       		.uleb128 0xe
+ 492 000b 55       		.uleb128 0x55
+ 493 000c 17       		.uleb128 0x17
+ 494 000d 11       		.uleb128 0x11
+ 495 000e 01       		.uleb128 0x1
+ 496 000f 10       		.uleb128 0x10
+ 497 0010 17       		.uleb128 0x17
+ 498 0011 00       		.byte	0
+ 499 0012 00       		.byte	0
+ 500 0013 02       		.uleb128 0x2
+ 501 0014 24       		.uleb128 0x24
+ 502 0015 00       		.byte	0
+ 503 0016 0B       		.uleb128 0xb
+ 504 0017 0B       		.uleb128 0xb
+ 505 0018 3E       		.uleb128 0x3e
+ 506 0019 0B       		.uleb128 0xb
+ 507 001a 03       		.uleb128 0x3
+ 508 001b 0E       		.uleb128 0xe
+ 509 001c 00       		.byte	0
+ 510 001d 00       		.byte	0
+ 511 001e 03       		.uleb128 0x3
+ 512 001f 16       		.uleb128 0x16
+ 513 0020 00       		.byte	0
+ 514 0021 03       		.uleb128 0x3
+ 515 0022 0E       		.uleb128 0xe
+ 516 0023 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 11
+
+
+ 517 0024 0B       		.uleb128 0xb
+ 518 0025 3B       		.uleb128 0x3b
+ 519 0026 0B       		.uleb128 0xb
+ 520 0027 49       		.uleb128 0x49
+ 521 0028 13       		.uleb128 0x13
+ 522 0029 00       		.byte	0
+ 523 002a 00       		.byte	0
+ 524 002b 04       		.uleb128 0x4
+ 525 002c 24       		.uleb128 0x24
+ 526 002d 00       		.byte	0
+ 527 002e 0B       		.uleb128 0xb
+ 528 002f 0B       		.uleb128 0xb
+ 529 0030 3E       		.uleb128 0x3e
+ 530 0031 0B       		.uleb128 0xb
+ 531 0032 03       		.uleb128 0x3
+ 532 0033 08       		.uleb128 0x8
+ 533 0034 00       		.byte	0
+ 534 0035 00       		.byte	0
+ 535 0036 05       		.uleb128 0x5
+ 536 0037 2E       		.uleb128 0x2e
+ 537 0038 01       		.byte	0x1
+ 538 0039 3F       		.uleb128 0x3f
+ 539 003a 19       		.uleb128 0x19
+ 540 003b 03       		.uleb128 0x3
+ 541 003c 0E       		.uleb128 0xe
+ 542 003d 3A       		.uleb128 0x3a
+ 543 003e 0B       		.uleb128 0xb
+ 544 003f 3B       		.uleb128 0x3b
+ 545 0040 0B       		.uleb128 0xb
+ 546 0041 27       		.uleb128 0x27
+ 547 0042 19       		.uleb128 0x19
+ 548 0043 49       		.uleb128 0x49
+ 549 0044 13       		.uleb128 0x13
+ 550 0045 11       		.uleb128 0x11
+ 551 0046 01       		.uleb128 0x1
+ 552 0047 12       		.uleb128 0x12
+ 553 0048 06       		.uleb128 0x6
+ 554 0049 40       		.uleb128 0x40
+ 555 004a 18       		.uleb128 0x18
+ 556 004b 9642     		.uleb128 0x2116
+ 557 004d 19       		.uleb128 0x19
+ 558 004e 01       		.uleb128 0x1
+ 559 004f 13       		.uleb128 0x13
+ 560 0050 00       		.byte	0
+ 561 0051 00       		.byte	0
+ 562 0052 06       		.uleb128 0x6
+ 563 0053 05       		.uleb128 0x5
+ 564 0054 00       		.byte	0
+ 565 0055 03       		.uleb128 0x3
+ 566 0056 0E       		.uleb128 0xe
+ 567 0057 3A       		.uleb128 0x3a
+ 568 0058 0B       		.uleb128 0xb
+ 569 0059 3B       		.uleb128 0x3b
+ 570 005a 0B       		.uleb128 0xb
+ 571 005b 49       		.uleb128 0x49
+ 572 005c 13       		.uleb128 0x13
+ 573 005d 02       		.uleb128 0x2
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 12
+
+
+ 574 005e 17       		.uleb128 0x17
+ 575 005f 00       		.byte	0
+ 576 0060 00       		.byte	0
+ 577 0061 07       		.uleb128 0x7
+ 578 0062 34       		.uleb128 0x34
+ 579 0063 00       		.byte	0
+ 580 0064 03       		.uleb128 0x3
+ 581 0065 0E       		.uleb128 0xe
+ 582 0066 3A       		.uleb128 0x3a
+ 583 0067 0B       		.uleb128 0xb
+ 584 0068 3B       		.uleb128 0x3b
+ 585 0069 0B       		.uleb128 0xb
+ 586 006a 49       		.uleb128 0x49
+ 587 006b 13       		.uleb128 0x13
+ 588 006c 02       		.uleb128 0x2
+ 589 006d 18       		.uleb128 0x18
+ 590 006e 00       		.byte	0
+ 591 006f 00       		.byte	0
+ 592 0070 08       		.uleb128 0x8
+ 593 0071 34       		.uleb128 0x34
+ 594 0072 00       		.byte	0
+ 595 0073 03       		.uleb128 0x3
+ 596 0074 0E       		.uleb128 0xe
+ 597 0075 3A       		.uleb128 0x3a
+ 598 0076 0B       		.uleb128 0xb
+ 599 0077 3B       		.uleb128 0x3b
+ 600 0078 0B       		.uleb128 0xb
+ 601 0079 49       		.uleb128 0x49
+ 602 007a 13       		.uleb128 0x13
+ 603 007b 1C       		.uleb128 0x1c
+ 604 007c 05       		.uleb128 0x5
+ 605 007d 00       		.byte	0
+ 606 007e 00       		.byte	0
+ 607 007f 09       		.uleb128 0x9
+ 608 0080 34       		.uleb128 0x34
+ 609 0081 00       		.byte	0
+ 610 0082 03       		.uleb128 0x3
+ 611 0083 0E       		.uleb128 0xe
+ 612 0084 3A       		.uleb128 0x3a
+ 613 0085 0B       		.uleb128 0xb
+ 614 0086 3B       		.uleb128 0x3b
+ 615 0087 0B       		.uleb128 0xb
+ 616 0088 49       		.uleb128 0x49
+ 617 0089 13       		.uleb128 0x13
+ 618 008a 1C       		.uleb128 0x1c
+ 619 008b 0B       		.uleb128 0xb
+ 620 008c 00       		.byte	0
+ 621 008d 00       		.byte	0
+ 622 008e 0A       		.uleb128 0xa
+ 623 008f 34       		.uleb128 0x34
+ 624 0090 00       		.byte	0
+ 625 0091 03       		.uleb128 0x3
+ 626 0092 0E       		.uleb128 0xe
+ 627 0093 3A       		.uleb128 0x3a
+ 628 0094 0B       		.uleb128 0xb
+ 629 0095 3B       		.uleb128 0x3b
+ 630 0096 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 13
+
+
+ 631 0097 49       		.uleb128 0x49
+ 632 0098 13       		.uleb128 0x13
+ 633 0099 1C       		.uleb128 0x1c
+ 634 009a 0D       		.uleb128 0xd
+ 635 009b 00       		.byte	0
+ 636 009c 00       		.byte	0
+ 637 009d 0B       		.uleb128 0xb
+ 638 009e 2E       		.uleb128 0x2e
+ 639 009f 01       		.byte	0x1
+ 640 00a0 3F       		.uleb128 0x3f
+ 641 00a1 19       		.uleb128 0x19
+ 642 00a2 03       		.uleb128 0x3
+ 643 00a3 0E       		.uleb128 0xe
+ 644 00a4 3A       		.uleb128 0x3a
+ 645 00a5 0B       		.uleb128 0xb
+ 646 00a6 3B       		.uleb128 0x3b
+ 647 00a7 0B       		.uleb128 0xb
+ 648 00a8 27       		.uleb128 0x27
+ 649 00a9 19       		.uleb128 0x19
+ 650 00aa 49       		.uleb128 0x49
+ 651 00ab 13       		.uleb128 0x13
+ 652 00ac 8701     		.uleb128 0x87
+ 653 00ae 19       		.uleb128 0x19
+ 654 00af 11       		.uleb128 0x11
+ 655 00b0 01       		.uleb128 0x1
+ 656 00b1 12       		.uleb128 0x12
+ 657 00b2 06       		.uleb128 0x6
+ 658 00b3 40       		.uleb128 0x40
+ 659 00b4 18       		.uleb128 0x18
+ 660 00b5 9742     		.uleb128 0x2117
+ 661 00b7 19       		.uleb128 0x19
+ 662 00b8 01       		.uleb128 0x1
+ 663 00b9 13       		.uleb128 0x13
+ 664 00ba 00       		.byte	0
+ 665 00bb 00       		.byte	0
+ 666 00bc 0C       		.uleb128 0xc
+ 667 00bd 34       		.uleb128 0x34
+ 668 00be 00       		.byte	0
+ 669 00bf 03       		.uleb128 0x3
+ 670 00c0 08       		.uleb128 0x8
+ 671 00c1 3A       		.uleb128 0x3a
+ 672 00c2 0B       		.uleb128 0xb
+ 673 00c3 3B       		.uleb128 0x3b
+ 674 00c4 0B       		.uleb128 0xb
+ 675 00c5 49       		.uleb128 0x49
+ 676 00c6 13       		.uleb128 0x13
+ 677 00c7 1C       		.uleb128 0x1c
+ 678 00c8 0A       		.uleb128 0xa
+ 679 00c9 00       		.byte	0
+ 680 00ca 00       		.byte	0
+ 681 00cb 0D       		.uleb128 0xd
+ 682 00cc 34       		.uleb128 0x34
+ 683 00cd 00       		.byte	0
+ 684 00ce 03       		.uleb128 0x3
+ 685 00cf 0E       		.uleb128 0xe
+ 686 00d0 3A       		.uleb128 0x3a
+ 687 00d1 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 14
+
+
+ 688 00d2 3B       		.uleb128 0x3b
+ 689 00d3 0B       		.uleb128 0xb
+ 690 00d4 49       		.uleb128 0x49
+ 691 00d5 13       		.uleb128 0x13
+ 692 00d6 02       		.uleb128 0x2
+ 693 00d7 17       		.uleb128 0x17
+ 694 00d8 00       		.byte	0
+ 695 00d9 00       		.byte	0
+ 696 00da 0E       		.uleb128 0xe
+ 697 00db 34       		.uleb128 0x34
+ 698 00dc 00       		.byte	0
+ 699 00dd 03       		.uleb128 0x3
+ 700 00de 08       		.uleb128 0x8
+ 701 00df 3A       		.uleb128 0x3a
+ 702 00e0 0B       		.uleb128 0xb
+ 703 00e1 3B       		.uleb128 0x3b
+ 704 00e2 0B       		.uleb128 0xb
+ 705 00e3 49       		.uleb128 0x49
+ 706 00e4 13       		.uleb128 0x13
+ 707 00e5 02       		.uleb128 0x2
+ 708 00e6 17       		.uleb128 0x17
+ 709 00e7 00       		.byte	0
+ 710 00e8 00       		.byte	0
+ 711 00e9 0F       		.uleb128 0xf
+ 712 00ea 898201   		.uleb128 0x4109
+ 713 00ed 00       		.byte	0
+ 714 00ee 11       		.uleb128 0x11
+ 715 00ef 01       		.uleb128 0x1
+ 716 00f0 31       		.uleb128 0x31
+ 717 00f1 13       		.uleb128 0x13
+ 718 00f2 00       		.byte	0
+ 719 00f3 00       		.byte	0
+ 720 00f4 10       		.uleb128 0x10
+ 721 00f5 898201   		.uleb128 0x4109
+ 722 00f8 01       		.byte	0x1
+ 723 00f9 11       		.uleb128 0x11
+ 724 00fa 01       		.uleb128 0x1
+ 725 00fb 31       		.uleb128 0x31
+ 726 00fc 13       		.uleb128 0x13
+ 727 00fd 01       		.uleb128 0x1
+ 728 00fe 13       		.uleb128 0x13
+ 729 00ff 00       		.byte	0
+ 730 0100 00       		.byte	0
+ 731 0101 11       		.uleb128 0x11
+ 732 0102 8A8201   		.uleb128 0x410a
+ 733 0105 00       		.byte	0
+ 734 0106 02       		.uleb128 0x2
+ 735 0107 18       		.uleb128 0x18
+ 736 0108 9142     		.uleb128 0x2111
+ 737 010a 18       		.uleb128 0x18
+ 738 010b 00       		.byte	0
+ 739 010c 00       		.byte	0
+ 740 010d 12       		.uleb128 0x12
+ 741 010e 898201   		.uleb128 0x4109
+ 742 0111 01       		.byte	0x1
+ 743 0112 11       		.uleb128 0x11
+ 744 0113 01       		.uleb128 0x1
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 15
+
+
+ 745 0114 31       		.uleb128 0x31
+ 746 0115 13       		.uleb128 0x13
+ 747 0116 00       		.byte	0
+ 748 0117 00       		.byte	0
+ 749 0118 13       		.uleb128 0x13
+ 750 0119 34       		.uleb128 0x34
+ 751 011a 00       		.byte	0
+ 752 011b 03       		.uleb128 0x3
+ 753 011c 0E       		.uleb128 0xe
+ 754 011d 3A       		.uleb128 0x3a
+ 755 011e 0B       		.uleb128 0xb
+ 756 011f 3B       		.uleb128 0x3b
+ 757 0120 05       		.uleb128 0x5
+ 758 0121 49       		.uleb128 0x49
+ 759 0122 13       		.uleb128 0x13
+ 760 0123 3F       		.uleb128 0x3f
+ 761 0124 19       		.uleb128 0x19
+ 762 0125 3C       		.uleb128 0x3c
+ 763 0126 19       		.uleb128 0x19
+ 764 0127 00       		.byte	0
+ 765 0128 00       		.byte	0
+ 766 0129 14       		.uleb128 0x14
+ 767 012a 35       		.uleb128 0x35
+ 768 012b 00       		.byte	0
+ 769 012c 49       		.uleb128 0x49
+ 770 012d 13       		.uleb128 0x13
+ 771 012e 00       		.byte	0
+ 772 012f 00       		.byte	0
+ 773 0130 15       		.uleb128 0x15
+ 774 0131 2E       		.uleb128 0x2e
+ 775 0132 00       		.byte	0
+ 776 0133 3F       		.uleb128 0x3f
+ 777 0134 19       		.uleb128 0x19
+ 778 0135 3C       		.uleb128 0x3c
+ 779 0136 19       		.uleb128 0x19
+ 780 0137 6E       		.uleb128 0x6e
+ 781 0138 0E       		.uleb128 0xe
+ 782 0139 03       		.uleb128 0x3
+ 783 013a 0E       		.uleb128 0xe
+ 784 013b 3A       		.uleb128 0x3a
+ 785 013c 0B       		.uleb128 0xb
+ 786 013d 3B       		.uleb128 0x3b
+ 787 013e 0B       		.uleb128 0xb
+ 788 013f 00       		.byte	0
+ 789 0140 00       		.byte	0
+ 790 0141 00       		.byte	0
+ 791              		.section	.debug_loc,"",%progbits
+ 792              	.Ldebug_loc0:
+ 793              	.LLST0:
+ 794 0000 00000000 		.4byte	.LVL0
+ 795 0004 09000000 		.4byte	.LVL2-1
+ 796 0008 0100     		.2byte	0x1
+ 797 000a 50       		.byte	0x50
+ 798 000b 09000000 		.4byte	.LVL2-1
+ 799 000f 1C000000 		.4byte	.LFE63
+ 800 0013 0600     		.2byte	0x6
+ 801 0015 F3       		.byte	0xf3
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 16
+
+
+ 802 0016 03       		.uleb128 0x3
+ 803 0017 F5       		.byte	0xf5
+ 804 0018 00       		.uleb128 0
+ 805 0019 25       		.uleb128 0x25
+ 806 001a 9F       		.byte	0x9f
+ 807 001b 00000000 		.4byte	0
+ 808 001f 00000000 		.4byte	0
+ 809              	.LLST1:
+ 810 0023 00000000 		.4byte	.LVL5
+ 811 0027 07000000 		.4byte	.LVL7-1
+ 812 002b 0100     		.2byte	0x1
+ 813 002d 50       		.byte	0x50
+ 814 002e 07000000 		.4byte	.LVL7-1
+ 815 0032 28000000 		.4byte	.LFE64
+ 816 0036 0600     		.2byte	0x6
+ 817 0038 F3       		.byte	0xf3
+ 818 0039 03       		.uleb128 0x3
+ 819 003a F5       		.byte	0xf5
+ 820 003b 00       		.uleb128 0
+ 821 003c 25       		.uleb128 0x25
+ 822 003d 9F       		.byte	0x9f
+ 823 003e 00000000 		.4byte	0
+ 824 0042 00000000 		.4byte	0
+ 825              	.LLST2:
+ 826 0046 02000000 		.4byte	.LVL11
+ 827 004a 06000000 		.4byte	.LVL12
+ 828 004e 0600     		.2byte	0x6
+ 829 0050 9E       		.byte	0x9e
+ 830 0051 04       		.uleb128 0x4
+ 831 0052 00000000 		.4byte	0
+ 832 0056 06000000 		.4byte	.LVL12
+ 833 005a 38000000 		.4byte	.LFE65
+ 834 005e 0600     		.2byte	0x6
+ 835 0060 9E       		.byte	0x9e
+ 836 0061 04       		.uleb128 0x4
+ 837 0062 249F303E 		.4byte	0x3e309f24
+ 838 0066 00000000 		.4byte	0
+ 839 006a 00000000 		.4byte	0
+ 840              	.LLST3:
+ 841 006e 02000000 		.4byte	.LVL11
+ 842 0072 06000000 		.4byte	.LVL12
+ 843 0076 0600     		.2byte	0x6
+ 844 0078 9E       		.byte	0x9e
+ 845 0079 04       		.uleb128 0x4
+ 846 007a 00000000 		.4byte	0
+ 847 007e 06000000 		.4byte	.LVL12
+ 848 0082 38000000 		.4byte	.LFE65
+ 849 0086 0600     		.2byte	0x6
+ 850 0088 9E       		.byte	0x9e
+ 851 0089 04       		.uleb128 0x4
+ 852 008a DB0F493F 		.4byte	0x3f490fdb
+ 853 008e 00000000 		.4byte	0
+ 854 0092 00000000 		.4byte	0
+ 855              	.LLST4:
+ 856 0096 02000000 		.4byte	.LVL11
+ 857 009a 06000000 		.4byte	.LVL12
+ 858 009e 0600     		.2byte	0x6
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 17
+
+
+ 859 00a0 9E       		.byte	0x9e
+ 860 00a1 04       		.uleb128 0x4
+ 861 00a2 00000000 		.4byte	0
+ 862 00a6 06000000 		.4byte	.LVL12
+ 863 00aa 38000000 		.4byte	.LFE65
+ 864 00ae 0600     		.2byte	0x6
+ 865 00b0 9E       		.byte	0x9e
+ 866 00b1 04       		.uleb128 0x4
+ 867 00b2 1AF83140 		.4byte	0x4031f81a
+ 868 00b6 00000000 		.4byte	0
+ 869 00ba 00000000 		.4byte	0
+ 870              	.LLST5:
+ 871 00be 02000000 		.4byte	.LVL11
+ 872 00c2 06000000 		.4byte	.LVL12
+ 873 00c6 0600     		.2byte	0x6
+ 874 00c8 9E       		.byte	0x9e
+ 875 00c9 04       		.uleb128 0x4
+ 876 00ca 00000000 		.4byte	0
+ 877 00ce 06000000 		.4byte	.LVL12
+ 878 00d2 38000000 		.4byte	.LFE65
+ 879 00d6 0600     		.2byte	0x6
+ 880 00d8 9E       		.byte	0x9e
+ 881 00d9 04       		.uleb128 0x4
+ 882 00da 12E81C3F 		.4byte	0x3f1ce812
+ 883 00de 00000000 		.4byte	0
+ 884 00e2 00000000 		.4byte	0
+ 885              	.LLST6:
+ 886 00e6 02000000 		.4byte	.LVL11
+ 887 00ea 06000000 		.4byte	.LVL12
+ 888 00ee 0600     		.2byte	0x6
+ 889 00f0 9E       		.byte	0x9e
+ 890 00f1 04       		.uleb128 0x4
+ 891 00f2 00000000 		.4byte	0
+ 892 00f6 06000000 		.4byte	.LVL12
+ 893 00fa 38000000 		.4byte	.LFE65
+ 894 00fe 0600     		.2byte	0x6
+ 895 0100 9E       		.byte	0x9e
+ 896 0101 04       		.uleb128 0x4
+ 897 0102 ACBDB83E 		.4byte	0x3eb8bdac
+ 898 0106 00000000 		.4byte	0
+ 899 010a 00000000 		.4byte	0
+ 900              		.section	.debug_aranges,"",%progbits
+ 901 0000 2C000000 		.4byte	0x2c
+ 902 0004 0200     		.2byte	0x2
+ 903 0006 00000000 		.4byte	.Ldebug_info0
+ 904 000a 04       		.byte	0x4
+ 905 000b 00       		.byte	0
+ 906 000c 0000     		.2byte	0
+ 907 000e 0000     		.2byte	0
+ 908 0010 00000000 		.4byte	.LFB63
+ 909 0014 1C000000 		.4byte	.LFE63-.LFB63
+ 910 0018 00000000 		.4byte	.LFB64
+ 911 001c 28000000 		.4byte	.LFE64-.LFB64
+ 912 0020 00000000 		.4byte	.LFB65
+ 913 0024 38000000 		.4byte	.LFE65-.LFB65
+ 914 0028 00000000 		.4byte	0
+ 915 002c 00000000 		.4byte	0
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 18
+
+
+ 916              		.section	.debug_ranges,"",%progbits
+ 917              	.Ldebug_ranges0:
+ 918 0000 00000000 		.4byte	.LFB63
+ 919 0004 1C000000 		.4byte	.LFE63
+ 920 0008 00000000 		.4byte	.LFB64
+ 921 000c 28000000 		.4byte	.LFE64
+ 922 0010 00000000 		.4byte	.LFB65
+ 923 0014 38000000 		.4byte	.LFE65
+ 924 0018 00000000 		.4byte	0
+ 925 001c 00000000 		.4byte	0
+ 926              		.section	.debug_line,"",%progbits
+ 927              	.Ldebug_line0:
+ 928 0000 A3010000 		.section	.debug_str,"MS",%progbits,1
+ 928      02005501 
+ 928      00000201 
+ 928      FB0E0D00 
+ 928      01010101 
+ 929              	.LASF24:
+ 930 0000 70686931 		.ascii	"phi1\000"
+ 930      00
+ 931              	.LASF25:
+ 932 0005 70686932 		.ascii	"phi2\000"
+ 932      00
+ 933              	.LASF26:
+ 934 000a 70686933 		.ascii	"phi3\000"
+ 934      00
+ 935              	.LASF10:
+ 936 000f 5F5F696E 		.ascii	"__int32_t\000"
+ 936      7433325F 
+ 936      7400
+ 937              	.LASF16:
+ 938 0019 436F6D70 		.ascii	"Compare\000"
+ 938      61726500 
+ 939              	.LASF28:
+ 940 0021 50574D5F 		.ascii	"PWM_1_WriteCompare1\000"
+ 940      315F5772 
+ 940      69746543 
+ 940      6F6D7061 
+ 940      72653100 
+ 941              	.LASF30:
+ 942 0035 50574D5F 		.ascii	"PWM_1_WriteCompare2\000"
+ 942      315F5772 
+ 942      69746543 
+ 942      6F6D7061 
+ 942      72653200 
+ 943              	.LASF0:
+ 944 0049 666C6F61 		.ascii	"float\000"
+ 944      7400
+ 945              	.LASF2:
+ 946 004f 756E7369 		.ascii	"unsigned char\000"
+ 946      676E6564 
+ 946      20636861 
+ 946      7200
+ 947              	.LASF31:
+ 948 005d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 948      43313120 
+ 948      352E342E 
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 19
+
+
+ 948      31203230 
+ 948      31363036 
+ 949 0090 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 949      20726576 
+ 949      6973696F 
+ 949      6E203233 
+ 949      37373135 
+ 950 00c3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 950      66756E63 
+ 950      74696F6E 
+ 950      2D736563 
+ 950      74696F6E 
+ 951              	.LASF22:
+ 952 00eb 54686574 		.ascii	"Theta2\000"
+ 952      613200
+ 953              	.LASF6:
+ 954 00f2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 954      20756E73 
+ 954      69676E65 
+ 954      6420696E 
+ 954      7400
+ 955              	.LASF27:
+ 956 0104 50574D5F 		.ascii	"PWM_1_Start\000"
+ 956      315F5374 
+ 956      61727400 
+ 957              	.LASF35:
+ 958 0110 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 958      52784275 
+ 958      66666572 
+ 958      00
+ 959              	.LASF21:
+ 960 011d 54686574 		.ascii	"Theta1\000"
+ 960      613100
+ 961              	.LASF12:
+ 962 0124 646F7562 		.ascii	"double\000"
+ 962      6C6500
+ 963              	.LASF17:
+ 964 012b 6D61785F 		.ascii	"max_comp\000"
+ 964      636F6D70 
+ 964      00
+ 965              	.LASF34:
+ 966 0134 6D61696E 		.ascii	"main\000"
+ 966      00
+ 967              	.LASF9:
+ 968 0139 756E7369 		.ascii	"unsigned int\000"
+ 968      676E6564 
+ 968      20696E74 
+ 968      00
+ 969              	.LASF23:
+ 970 0146 416E676C 		.ascii	"Angle\000"
+ 970      6500
+ 971              	.LASF8:
+ 972 014c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 972      206C6F6E 
+ 972      6720756E 
+ 972      7369676E 
+ 972      65642069 
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 20
+
+
+ 973              	.LASF11:
+ 974 0163 696E7433 		.ascii	"int32_t\000"
+ 974      325F7400 
+ 975              	.LASF15:
+ 976 016b 73697A65 		.ascii	"sizetype\000"
+ 976      74797065 
+ 976      00
+ 977              	.LASF4:
+ 978 0174 73686F72 		.ascii	"short unsigned int\000"
+ 978      7420756E 
+ 978      7369676E 
+ 978      65642069 
+ 978      6E7400
+ 979              	.LASF7:
+ 980 0187 6C6F6E67 		.ascii	"long long int\000"
+ 980      206C6F6E 
+ 980      6720696E 
+ 980      7400
+ 981              	.LASF32:
+ 982 0195 6D61696E 		.ascii	"main.c\000"
+ 982      2E6300
+ 983              	.LASF13:
+ 984 019c 63686172 		.ascii	"char\000"
+ 984      00
+ 985              	.LASF20:
+ 986 01a1 6D61785F 		.ascii	"max_angle\000"
+ 986      616E676C 
+ 986      6500
+ 987              	.LASF3:
+ 988 01ab 73686F72 		.ascii	"short int\000"
+ 988      7420696E 
+ 988      7400
+ 989              	.LASF33:
+ 990 01b5 433A5C55 		.ascii	"C:\\Users\\Jorge\\Documents\\PSoC Creator\\Robotics"
+ 990      73657273 
+ 990      5C4A6F72 
+ 990      67655C44 
+ 990      6F63756D 
+ 991 01e3 315C5365 		.ascii	"1\\Servos.cydsn\000"
+ 991      72766F73 
+ 991      2E637964 
+ 991      736E00
+ 992              	.LASF5:
+ 993 01f2 6C6F6E67 		.ascii	"long int\000"
+ 993      20696E74 
+ 993      00
+ 994              	.LASF14:
+ 995 01fb 6C6F6E67 		.ascii	"long double\000"
+ 995      20646F75 
+ 995      626C6500 
+ 996              	.LASF1:
+ 997 0207 7369676E 		.ascii	"signed char\000"
+ 997      65642063 
+ 997      68617200 
+ 998              	.LASF18:
+ 999 0213 6D696E5F 		.ascii	"min_comp\000"
+ 999      636F6D70 
+ARM GAS  C:\Users\Jorge\AppData\Local\Temp\ccOLFTrb.s 			page 21
+
+
+ 999      00
+ 1000              	.LASF19:
+ 1001 021c 6D696E5F 		.ascii	"min_angle\000"
+ 1001      616E676C 
+ 1001      6500
+ 1002              	.LASF29:
+ 1003 0226 43794465 		.ascii	"CyDelay\000"
+ 1003      6C617900 
+ 1004              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
